@@ -1243,7 +1243,7 @@
     };
 
     var addToolbarButton = function (toolbar) {
-        var html = '<button id="impress-autoplay-playpause" title="Autoplay" class="impress-autoplay">' + getButtonText() + '</button>';
+        var html = '<button id="impress-autoplay-playpause" title="Reproducción automática" class="impress-autoplay">' + getButtonText() + '</button>';
         toolbarButton = makeDomElement( html );
         toolbarButton.addEventListener( "click", function( event ) {
             toggleStatus();
@@ -1716,7 +1716,7 @@
             });
         }
         // Use our own API to register the help text for 'h'
-        triggerEvent(document, "impress:help:add", { command : "H", text : "Show this help", row : 0} );
+        triggerEvent(document, "impress:help:add", { command : "H", text : "Ver la ayuda", row : 0} );
     });
     
     
@@ -2027,7 +2027,7 @@
         }, false);
         
         // Add a line to the help popup
-        triggerEvent(document, "impress:help:add", { command : "Left &amp; Right", text : "Previous &amp; Next step", row : 1} );
+        triggerEvent(document, "impress:help:add", { command : "Izquierda y derecha", text : "Anterior y proximo paso", row : 1} );
         
     }, false);
         
@@ -2086,11 +2086,11 @@
         root = event.target;
         steps = root.querySelectorAll(".step");
 
-        var prevHtml   = '<button id="impress-navigation-ui-prev" title="Previous" class="impress-navigation-ui">&lt;</button>';
-        var selectHtml = '<select id="impress-navigation-ui-select" title="Go to" class="impress-navigation-ui">' + "\n"
+        var prevHtml   = '<button id="impress-navigation-ui-prev" title="Anterior" class="impress-navigation-ui">&lt;</button>';
+        var selectHtml = '<select id="impress-navigation-ui-select" title="Ir a" class="impress-navigation-ui">' + "\n"
                            + selectOptionsHtml();
                            + '</select>';
-        var nextHtml   = '<button id="impress-navigation-ui-next" title="Next" class="impress-navigation-ui">&gt;</button>';
+        var nextHtml   = '<button id="impress-navigation-ui-next" title="Siguiente" class="impress-navigation-ui">&gt;</button>';
 
         prev = makeDomElement( prevHtml );
         prev.addEventListener( "click",
