@@ -17,8 +17,8 @@
     </div>
 
     <div id="impress" data-transition-duration="2000">
-        <div id="overview" class="step overview" data-x="2000" data-y="-1000" data-z="2500" data-scale="3" data-rotate-y="90"
-            data-rotate-x="0" data-rotate-z="0" data-rotate-order="xyz">
+        <div id="overview" class="step overview" data-x="2000" data-y="-1000" data-z="2500" data-scale="3"
+            data-rotate-y="90" data-rotate-x="0" data-rotate-z="0" data-rotate-order="xyz">
             <h1 class="titulo">Física 1</h1>
             <h3 style="text-align: left;" data-mce-style="text-align: left;">Presentación del curso</h3>
         </div>
@@ -91,10 +91,15 @@
 
         <div id="Plataforma" class="step" data-x="-2696" data-y="87" data-z="-525" data-rotate-y="-154" data-rotate-z="-180"
             data-rotate-x="0" data-rotate-order="xyz" data-scale="1">
-            <h1>Plataforma</h1>
+            
             <center>
-                <h2>Google Classroom</h2><img src="img/Classroom.png" alt="" width="50%" data-mce-src="img/Classroom.png">
+                <h1>Google Classroom</h1>
+                <img src="img/Classroom.png" alt="" width="35%" data-mce-src="img/Classroom.png">
                 <h4><a href="https://classroom.google.com/?hl=es" data-mce-href="https://classroom.google.com/?hl=es">https://classroom.google.com/?hl=es</a></h4>
+                <!-- <span style="font-size:2em;" id="clave"></span><br>
+                <input id="B" type="button" onclick="cambiarClave('B')" value="B">
+                <input id="C" type="button" onclick="cambiarClave('C')" value="C">
+                <input id="D" type="button" onclick="cambiarClave('D')" value="D"> -->
             </center>
         </div>
         <div id="Flujo" class="step" data-x="-3045" data-y="89" data-z="-10" data-rotate-y="-94" data-rotate-z="-180"
@@ -242,7 +247,24 @@
 
     <script type="text/javascript" src="impress.js/js/impress.js"></script>
 
-    <script>impress().init();</script>
+    <script>
+        impress().init();
+        function cambiarClave(g) {
+            this.g = g;
+            if (g == "B") {
+               
+               document.getElementById("clave").innerHTML = "gq76lg";
+            }
+            if (g == "C") {
+               
+               document.getElementById("clave").innerHTML = "6nj7mg";
+            }
+            if (g == "D") {
+               
+               document.getElementById("clave").innerHTML = "lcla36";
+            }
+        }
+    </script>
 
 </body>
 
