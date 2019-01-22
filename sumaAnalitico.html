@@ -7,9 +7,10 @@
   <meta name="description" content="Suma de vectores - métodos analíticos">
   <meta name="author" content="Marco Pérez">
   <link href="css/sumaAna.css" rel="stylesheet">
-   <script src="MathJax.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
   <style>
-     .step {
+    .step {
       position: relative;
       /* padding: 40px; */
      /*  margin: 0 auto; */
@@ -45,15 +46,15 @@
     </div>
     <div class="step slide" data-x="3517" data-y="-299" data-rotate="0" data-scale="1">
       <p class="texto">
-          Se utilizan para obtener la magnitud y dirección de la resultante por medio de leyes y teoremas matemáticos 
+        Se obtiene la magnitud y dirección de la resultante por medio de leyes y teoremas matemáticos
       </p>
     </div>
     <div class="step sinSlide" data-x="3450" data-y="419" data-rotate="10.588235294117647" data-scale="1">
-      <h1>Método de pitágoras</h1>
+      <h1>Método de Pitágoras</h1>
     </div>
     <div class="step slide" data-x="3252" data-y="1114" data-rotate="21.176470588235293" data-scale="1">
       <p class="texto">
-          Sirve para sumar solo 2 vectores que formen un ángulo de 90°
+        Sirve para sumar solo 2 vectores que formen un ángulo de 90°
       </p>
     </div>
     <div class="step sinSlide" data-x="2930" data-y="1762" data-rotate="31.764705882352942" data-scale="1">
@@ -61,102 +62,192 @@
     </div>
     <div class="step slide" data-x="2494" data-y="2338" data-rotate="42.35294117647059" data-scale="1">
       <p class="texto">
-          Se usa el teorema de pitágoras asumiendo que los vectores componentes son los catetos y la resultante es la hipotenusa  
+        Se usa el teorema de Pitágoras asumiendo que los vectores componentes son los catetos y la resultante es la
+        hipotenusa
       </p>
     </div>
     <div class="step slide" data-x="1960" data-y="2825" data-rotate="52.94117647058823" data-scale="1">
-      <h2>
+      <h2 class="formula">
         $$d_{t} = \sqrt{d_{1}^{2} + d_{2}^{2}}$$
       </h2>
-      <h2>
+      <h2 class="formula">
         $$c = \sqrt{a^{2} + b^{2}}$$
       </h2>
     </div>
-    <div class="step slide" data-x="1345" data-y="3206" data-rotate="63.529411764705884" data-scale="1">
-      <p>Slide 7</p>
+    <div class="step sinSlide" data-x="1345" data-y="3206" data-rotate="63.529411764705884" data-scale="1">
+      <h1>Dirección de la resultante </h1>
     </div>
     <div class="step slide" data-x="671" data-y="3467" data-rotate="74.11764705882352" data-scale="1">
-      <p>Slide 8</p>
+      <p class="texto">
+        Se determina mediante la función tangente
+      </p>
+      <span class="formula">
+        $$\theta = \tan^{- 1}\left( \frac{\text{cateto\ opuesto}}{\text{cateto\ adyacente}} \right)$$
+      </span>
     </div>
     <div class="step slide" data-x="-38" data-y="3600" data-rotate="84.70588235294117" data-scale="1">
-      <p>Slide 9</p>
+      <p class="texto">o bien:</p>
+      <span class="formula" style="font-size:1.5em;">
+        $$\theta = \tan^{- 1}\left( \frac{d_{1}}{d_{2}} \right)$$
+      </span>
     </div>
     <div class="step slide" data-x="-761" data-y="3600" data-rotate="95.29411764705883" data-scale="1">
-      <p>Slide 10</p>
+      <center><img src="img/pitagoras.png" alt="" srcset="" width="60%"></center>
     </div>
     <div class="step slide" data-x="-1471" data-y="3467" data-rotate="105.88235294117646" data-scale="1">
-      <p>Slide 11</p>
+      <h2>Ejemplo</h2>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
     </div>
-    <div class="step slide" data-x="-2145" data-y="3206" data-rotate="116.47058823529412" data-scale="1">
-      <p>Slide 12</p>
+    <div class="step sinSlide" data-x="-2145" data-y="3206" data-rotate="116.47058823529412" data-scale="1">
+      <h1>Método de las leyes de seno y coseno</h1>
     </div>
     <div class="step slide" data-x="-2760" data-y="2825" data-rotate="127.05882352941177" data-scale="1">
-      <p>Slide 13</p>
+      <p class="texto">
+        Se calcula la resultante de dos vectores concurrentes cuyo ángulo sea distinto de 90°
+      </p>
     </div>
-    <div class="step slide" data-x="-3294" data-y="2338" data-rotate="137.64705882352942" data-scale="1">
-      <p>Slide 14</p>
+    <div class="step sinSlide" data-x="-3294" data-y="2338" data-rotate="137.64705882352942" data-scale="1">
+      <h2>
+        Magnitud de la resultante
+      </h2>
     </div>
     <div class="step slide" data-x="-3730" data-y="1762" data-rotate="148.23529411764704" data-scale="1">
-      <p>Slide 15</p>
+      <h3>Ley de cosenos:</h3>
+      <p>
+        En un triángulo cualquiera, el cuadrado de un lado es igual a la suma de los cuadrados de los otros dos, menos
+        el doble del producto de los mismos por el coseno del ángulo que forma entre sí
+      </p>
     </div>
-    <div class="step slide" data-x="-4052" data-y="1114" data-rotate="158.8235294117647" data-scale="1">
-      <p>Slide 16</p>
+    <div class="step sinSlide" data-x="-4052" data-y="1114" data-rotate="158.8235294117647" data-scale="1">
+      <center><img src="img/mindfuck.gif" alt="" srcset="" width="100%"></center>
     </div>
     <div class="step slide" data-x="-4250" data-y="419" data-rotate="169.41176470588235" data-scale="1">
-      <p>Slide 17</p>
+      <p class="formula" style="font-size:1.1em;">
+        $$(d_t^2 )=d_1^2+d_2^2-2d_1 d_2 \cos \Theta$$
+      </p>
+      <p class="formula" style="font-size:1.1em;">
+        $$d_{t} = \sqrt{d_{1}^{2} + d_{2}^{2} - 2d_{1}d_{2}\cos \Theta }$$
+      </p>
     </div>
-    <div class="step slide" data-x="-4317" data-y="-300" data-rotate="180" data-scale="1">
-      <p>Slide 18</p>
+    <div class="step sinSlide" data-x="-4317" data-y="-300" data-rotate="180" data-scale="1">
+      <h2>Dirección de la resultante </h2>
     </div>
     <div class="step slide" data-x="-4250" data-y="-1019" data-rotate="190.58823529411765" data-scale="1">
-      <p>Slide 19</p>
+      <h3>
+        Ley de senos
+      </h3>
+      <p class="texto">
+        En un triángulo cualquiera los lados son proporcionales al seno de los ángulos opuestos
+      </p>
     </div>
     <div class="step slide" data-x="-4052" data-y="-1714" data-rotate="201.17647058823528" data-scale="1">
-      <p>Slide 20</p>
+      <span class="formula" style="font-size:1.5em;">
+        $$\frac{d_{1}}{\sin \beta } = \frac{d_{2}}{\sin \alpha } = \frac{d_{t}}{\sin \theta }$$
+      </span>
     </div>
     <div class="step slide" data-x="-3730" data-y="-2362" data-rotate="211.76470588235293" data-scale="1">
-      <p>Slide 21</p>
+      <center>
+        <img src="img/senoscosenos.png" alt="" width="90%">
+      </center>
     </div>
     <div class="step slide" data-x="-3294" data-y="-2938" data-rotate="222.35294117647058" data-scale="1">
-      <p>Slide 22</p>
+      <h2>Ejemplo</h2>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
     </div>
-    <div class="step slide" data-x="-2760" data-y="-3425" data-rotate="232.94117647058823" data-scale="1">
-      <p>Slide 23</p>
+    <div class="step sinSlide" data-x="-2760" data-y="-3425" data-rotate="232.94117647058823" data-scale="1">
+      <h1>
+        Componentes ortogonales
+      </h1>
     </div>
     <div class="step slide" data-x="-2145" data-y="-3806" data-rotate="243.52941176470588" data-scale="1">
-      <p>Slide 24</p>
+      <center><img src="img/1.svg" alt="" width="20%"></center>
+      <p class="texto">
+        Se determina la componente horizontal y vertical de cada vector
+      </p>
     </div>
     <div class="step slide" data-x="-1471" data-y="-4067" data-rotate="254.11764705882354" data-scale="1">
-      <p>Slide 25</p>
+      <span class="formula" style="font-size:2em;">
+        $$V_{y} = V\ sen\theta$$
+      </span>
+      <span class="formula" style="font-size:2em;">
+        $$V_{x} = V\ cos\theta$$
+      </span>
     </div>
     <div class="step slide" data-x="-761" data-y="-4200" data-rotate="264.70588235294116" data-scale="1">
-      <p>Slide 26</p>
+      <center><img src="img/2.svg" alt="" width="20%"></center>
+      <p class="texto">
+        Se suman las componentes horizontales multiplicando la magnitud por el coseno del ángulo
+      </p>
     </div>
     <div class="step slide" data-x="-38" data-y="-4200" data-rotate="275.29411764705884" data-scale="1">
-      <p>Slide 27</p>
+      <span class="formula" style="font-size:60%">
+        $$\sum{x} = \left( F_{1}x \right)\left( \cos\alpha \right) + \left( F_{2}x \right)\left( \cos\beta \right) +
+        \left( F_{3}x \right)\left( \cos\gamma \right) + \ldots$$
+      </span>
     </div>
     <div class="step slide" data-x="671" data-y="-4067" data-rotate="285.88235294117646" data-scale="1">
-      <p>Slide 28</p>
+      <center><img src="img/3.svg" alt="" width="20%"></center>
+      <p class="texto">
+        Se suman las componentes verticales multiplicando la magnitud por el seno del ángulo
+      </p>
     </div>
     <div class="step slide" data-x="1345" data-y="-3806" data-rotate="296.4705882352941" data-scale="1">
-      <p>Slide 29</p>
+      <span class="formula" style="font-size:60%">
+        $$\sum{y} = \left( F_{1}y \right)\left( \operatorname{sen}\alpha \right) + \left( F_{2}y \right)\left(
+        \operatorname{sen}\beta \right) + \left( F_{3}y \right)\left( \operatorname{sen}\gamma \right) + \ldots$$
+      </span>
     </div>
     <div class="step slide" data-x="1960" data-y="-3425" data-rotate="307.05882352941177" data-scale="1">
-      <p>Slide 30</p>
+      <center><img src="img/4.svg" alt="" width="20%"></center>
+      <p class="texto">
+          Para encontrar analíticamente la magnitud de la resultante, se utiliza el Teorema de Pitágoras
+      </p>
     </div>
     <div class="step slide" data-x="2494" data-y="-2938" data-rotate="317.6470588235294" data-scale="1">
-      <p>Slide 31</p>
+      <span class="formula" style="font-size:1.2em;">
+        $$R = \sqrt{\left( \sum{x} \right)^{2} + \left( \sum{y} \right)^{2}}$$
+      </span>
     </div>
     <div class="step slide" data-x="2930" data-y="-2362" data-rotate="328.2352941176471" data-scale="1">
-      <p>Slide 32</p>
+      <center><img src="img/5.svg" alt="" width="20%"></center>
+      <p class="texto">
+          El ángulo se determina por:
+      </p>
+      <span class="formula">
+        $$\theta = tan^{-1}\left( \frac{\sum{y}}{\sum{x}} \right)$$
+      </span>
     </div>
     <div class="step slide" data-x="3252" data-y="-1714" data-rotate="338.8235294117647" data-scale="1">
-      <p>Slide 33</p>
+        <h2>Ejemplo</h2>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
     </div>
-    <div class="step slide credits" data-x="3450" data-y="-1019" data-rotate="349.4117647058823" data-scale="1">
-      
+    <div class="step sinSlide credits" data-x="3450" data-y="-1019" data-rotate="349.4117647058823" data-scale="1">
+<center>
+  <img src="img/dolor.gif" alt="" width="100%">
+</center>
     </div>
-   
+
   </div>
   <div id="impress-toolbar"></div>
   <div id="impress-help"></div>
