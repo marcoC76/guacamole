@@ -1,0 +1,22 @@
+
+.step {
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.slide {
+    width: 800px;
+    height: 600px;
+
+}
+
+h1, h2, h3 {
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    text-align: center;
+    text-shadow: rgb(114, 11, 4) 5px 5px 0px;
+}

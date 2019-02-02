@@ -3,32 +3,19 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Suma de vectores - Métodos analíticos | Física 1</title>
-    <meta name="description" content="Suma de vectores - métodos analíticos">
+    <title>Movimiento Curvilineo | Física 1</title>
+    <meta name="description" content="Movimeinto Curvilineo">
     <meta name="author" content="Marco Pérez">
-    <link href="css/sumaAna.css" rel="stylesheet">
+    <link href="css/2do.css" rel="stylesheet">
+    <link href="css/mcu.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-
     <style>
-        .step {
-            position: relative;
-            /* padding: 40px; */
-            /*  margin: 0 auto; */
-            -webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            -ms-box-sizing: border-box;
-            -o-box-sizing: border-box;
-            box-sizing: border-box;
-        }
-
-        .slide {
-            /* display: block; */
-            width: 800px;
-            height: 600px;
-            /* padding: 120px 60px; */
-
+        body{
+            background-image: url('img/fancy-pants.jpg');
+            /* background-image: url('img/c5ca1962.png'); */
         }
     </style>
+
 </head>
 
 <body class="impress-not-supported">
@@ -40,84 +27,144 @@
     <div id="impress" data-transition-duration="2000">
         <div id="overview" class="step sinSlide overview" data-x="2000" data-y="-1000" data-z="3500" data-scale="8"
             data-rotate-y="90" data-rotate-x="0" data-rotate-z="0" data-rotate-order="xyz">
-            <h2 class="titulo">Suma de vectores - Métodos analíticos</h2>
+            <h2 class="titulo">Movimiento Curvilineo</h2>
         </div>
-        <div class="step slide" data-x="4655" data-y="-299" data-rotate="0" data-scale="1"><q>Slide 1</q></div>
-        <div class="step slide" data-x="4605" data-y="403" data-rotate="8" data-scale="1"><q>Slide 2</q></div>
-        <div class="step slide" data-x="4459" data-y="1093" data-rotate="16" data-scale="1"><q>Slide 3</q></div>
-        <div class="step slide" data-x="4217" data-y="1756" data-rotate="24" data-scale="1"><q>Slide 4</q></div>
-        <div class="step slide" data-x="3886" data-y="2378" data-rotate="32" data-scale="1"><q>Slide 5</q></div>
-        <div class="step slide" data-x="3472" data-y="2949" data-rotate="40" data-scale="1"><q>Slide 6</q></div>
-        <div class="step slide" data-x="2982" data-y="3456" data-rotate="48" data-scale="1"><q>Slide 7</q></div>
-        <div class="step slide" data-x="2426" data-y="3890" data-rotate="56" data-scale="1"><q>Slide 8</q></div>
-        <div class="step slide" data-x="1815" data-y="4243" data-rotate="64" data-scale="1"><q>Slide 9</q></div>
-        <div class="step slide" data-x="1162" data-y="4507" data-rotate="72" data-scale="1"><q>Slide 10</q></div>
-        <div class="step slide" data-x="477" data-y="4678" data-rotate="80" data-scale="1"><q>Slide 11</q></div>
-        <div class="step slide" data-x="-223" data-y="4751" data-rotate="88" data-scale="1"><q>Slide 12</q></div>
-        <div class="step slide" data-x="-928" data-y="4727" data-rotate="96" data-scale="1"><q>Slide 13</q></div>
-        <div class="step slide" data-x="-1622" data-y="4604" data-rotate="104" data-scale="1"><q>Slide 14</q></div>
-        <div class="step slide" data-x="-2293" data-y="4386" data-rotate="112" data-scale="1"><q>Slide 15</q></div>
-        <div class="step slide" data-x="-2927" data-y="4077" data-rotate="120" data-scale="1"><q>Slide 16</q></div>
-        <div class="step slide" data-x="-3512" data-y="3683" data-rotate="128" data-scale="1"><q>Slide 17</q></div>
-        <div class="step slide" data-x="-4036" data-y="3211" data-rotate="136" data-scale="1"><q>Slide 18</q></div>
-        <div class="step slide" data-x="-4489" data-y="2671" data-rotate="144" data-scale="1"><q>Slide 19</q></div>
-        <div class="step slide" data-x="-4863" data-y="2073" data-rotate="152" data-scale="1"><q>Slide 20</q></div>
-        <div class="step slide" data-x="-5150" data-y="1428" data-rotate="160" data-scale="1"><q>Slide 21</q></div>
-        <div class="step slide" data-x="-5344" data-y="750" data-rotate="168" data-scale="1"><q>Slide 22</q></div>
-        <div class="step slide" data-x="-5442" data-y="52" data-rotate="176" data-scale="1"><q>Slide 23</q></div>
-        <div class="step slide" data-x="-5442" data-y="-652" data-rotate="184" data-scale="1"><q>Slide 24</q></div>
-        <div class="step slide" data-x="-5344" data-y="-1350" data-rotate="192" data-scale="1"><q>Slide 25</q></div>
-        <div class="step slide" data-x="-5150" data-y="-2028" data-rotate="200" data-scale="1"><q>Slide 26</q></div>
-        <div class="step slide" data-x="-4863" data-y="-2673" data-rotate="208" data-scale="1"><q>Slide 27</q></div>
-        <div class="step slide" data-x="-4489" data-y="-3271" data-rotate="216" data-scale="1"><q>Slide 28</q></div>
-        <div class="step slide" data-x="-4036" data-y="-3811" data-rotate="224" data-scale="1"><q>Slide 29</q></div>
-        <div class="step slide" data-x="-3512" data-y="-4283" data-rotate="232" data-scale="1"><q>Slide 30</q></div>
-        <div class="step slide" data-x="-2927" data-y="-4677" data-rotate="240" data-scale="1"><q>Slide 31</q></div>
-        <div class="step slide" data-x="-2293" data-y="-4986" data-rotate="248" data-scale="1"><q>Slide 32</q></div>
-        <div class="step slide" data-x="-1622" data-y="-5204" data-rotate="256" data-scale="1"><q>Slide 33</q></div>
-        <div class="step slide" data-x="-928" data-y="-5327" data-rotate="264" data-scale="1"><q>Slide 34</q></div>
-        <div class="step slide" data-x="-223" data-y="-5351" data-rotate="272" data-scale="1"><q>Slide 35</q></div>
-        <div class="step slide" data-x="477" data-y="-5278" data-rotate="280" data-scale="1"><q>Slide 36</q></div>
-        <div class="step slide" data-x="1162" data-y="-5107" data-rotate="288" data-scale="1"><q>Slide 37</q></div>
-        <div class="step slide" data-x="1815" data-y="-4843" data-rotate="296" data-scale="1"><q>Slide 38</q></div>
-        <div class="step slide" data-x="2426" data-y="-4490" data-rotate="304" data-scale="1"><q>Slide 39</q></div>
-        <div class="step slide" data-x="2982" data-y="-4056" data-rotate="312" data-scale="1"><q>Slide 40</q></div>
-        <div class="step slide" data-x="3472" data-y="-3549" data-rotate="320" data-scale="1"><q>Slide 41</q></div>
-        <div class="step slide" data-x="3886" data-y="-2978" data-rotate="328" data-scale="1"><q>Slide 42</q></div>
-        <div class="step slide" data-x="4217" data-y="-2356" data-rotate="336" data-scale="1"><q>Slide 43</q></div>
-        <div class="step slide" data-x="4459" data-y="-1693" data-rotate="344" data-scale="1"><q>Slide 44</q></div>
+        <div class="step slide" data-x="4655" data-y="-299" data-rotate="0" data-scale="1">
+            <p>Slide 1</p>
+        </div>
+        <div class="step slide" data-x="4605" data-y="403" data-rotate="8" data-scale="1">
+            <p>Slide 2</p>
+        </div>
+        <div class="step slide" data-x="4459" data-y="1093" data-rotate="16" data-scale="1">
+            <p>Slide 3</p>
+        </div>
+        <div class="step slide" data-x="4217" data-y="1756" data-rotate="24" data-scale="1">
+            <p>Slide 4</p>
+        </div>
+        <div class="step slide" data-x="3886" data-y="2378" data-rotate="32" data-scale="1">
+            <p>Slide 5</p>
+        </div>
+        <div class="step slide" data-x="3472" data-y="2949" data-rotate="40" data-scale="1">
+            <p>Slide 6</p>
+        </div>
+        <div class="step slide" data-x="2982" data-y="3456" data-rotate="48" data-scale="1">
+            <p>Slide 7</p>
+        </div>
+        <div class="step slide" data-x="2426" data-y="3890" data-rotate="56" data-scale="1">
+            <p>Slide 8</p>
+        </div>
+        <div class="step slide" data-x="1815" data-y="4243" data-rotate="64" data-scale="1">
+            <p>Slide 9</p>
+        </div>
+        <div class="step slide" data-x="1162" data-y="4507" data-rotate="72" data-scale="1">
+            <p>Slide 10</p>
+        </div>
+        <div class="step slide" data-x="477" data-y="4678" data-rotate="80" data-scale="1">
+            <p>Slide 11</p>
+        </div>
+        <div class="step slide" data-x="-223" data-y="4751" data-rotate="88" data-scale="1">
+            <p>Slide 12</p>
+        </div>
+        <div class="step slide" data-x="-928" data-y="4727" data-rotate="96" data-scale="1">
+            <p>Slide 13</p>
+        </div>
+        <div class="step slide" data-x="-1622" data-y="4604" data-rotate="104" data-scale="1">
+            <p>Slide 14</p>
+        </div>
+        <div class="step slide" data-x="-2293" data-y="4386" data-rotate="112" data-scale="1">
+            <p>Slide 15</p>
+        </div>
+        <div class="step slide" data-x="-2927" data-y="4077" data-rotate="120" data-scale="1">
+            <p>Slide 16</p>
+        </div>
+        <div class="step slide" data-x="-3512" data-y="3683" data-rotate="128" data-scale="1">
+            <p>Slide 17</p>
+        </div>
+        <div class="step slide" data-x="-4036" data-y="3211" data-rotate="136" data-scale="1">
+            <p>Slide 18</p>
+        </div>
+        <div class="step slide" data-x="-4489" data-y="2671" data-rotate="144" data-scale="1">
+            <p>Slide 19</p>
+        </div>
+        <div class="step slide" data-x="-4863" data-y="2073" data-rotate="152" data-scale="1">
+            <p>Slide 20</p>
+        </div>
+        <div class="step slide" data-x="-5150" data-y="1428" data-rotate="160" data-scale="1">
+            <p>Slide 21</p>
+        </div>
+        <div class="step slide" data-x="-5344" data-y="750" data-rotate="168" data-scale="1">
+            <p>Slide 22</p>
+        </div>
+        <div class="step slide" data-x="-5442" data-y="52" data-rotate="176" data-scale="1">
+            <p>Slide 23</p>
+        </div>
+        <div class="step slide" data-x="-5442" data-y="-652" data-rotate="184" data-scale="1">
+            <p>Slide 24</p>
+        </div>
+        <div class="step slide" data-x="-5344" data-y="-1350" data-rotate="192" data-scale="1">
+            <p>Slide 25</p>
+        </div>
+        <div class="step slide" data-x="-5150" data-y="-2028" data-rotate="200" data-scale="1">
+            <p>Slide 26</p>
+        </div>
+        <div class="step slide" data-x="-4863" data-y="-2673" data-rotate="208" data-scale="1">
+            <p>Slide 27</p>
+        </div>
+        <div class="step slide" data-x="-4489" data-y="-3271" data-rotate="216" data-scale="1">
+            <p>Slide 28</p>
+        </div>
+        <div class="step slide" data-x="-4036" data-y="-3811" data-rotate="224" data-scale="1">
+            <p>Slide 29</p>
+        </div>
+        <div class="step slide" data-x="-3512" data-y="-4283" data-rotate="232" data-scale="1">
+            <p>Slide 30</p>
+        </div>
+        <div class="step slide" data-x="-2927" data-y="-4677" data-rotate="240" data-scale="1">
+            <p>Slide 31</p>
+        </div>
+        <div class="step slide" data-x="-2293" data-y="-4986" data-rotate="248" data-scale="1">
+            <p>Slide 32</p>
+        </div>
+        <div class="step slide" data-x="-1622" data-y="-5204" data-rotate="256" data-scale="1">
+            <p>Slide 33</p>
+        </div>
+        <div class="step slide" data-x="-928" data-y="-5327" data-rotate="264" data-scale="1">
+            <p>Slide 34</p>
+        </div>
+        <div class="step slide" data-x="-223" data-y="-5351" data-rotate="272" data-scale="1">
+            <p>Slide 35</p>
+        </div>
+        <div class="step slide" data-x="477" data-y="-5278" data-rotate="280" data-scale="1">
+            <p>Slide 36</p>
+        </div>
+        <div class="step slide" data-x="1162" data-y="-5107" data-rotate="288" data-scale="1">
+            <p>Slide 37</p>
+        </div>
+        <div class="step slide" data-x="1815" data-y="-4843" data-rotate="296" data-scale="1">
+            <p>Slide 38</p>
+        </div>
+        <div class="step slide" data-x="2426" data-y="-4490" data-rotate="304" data-scale="1">
+            <p>Slide 39</p>
+        </div>
+        <div class="step slide" data-x="2982" data-y="-4056" data-rotate="312" data-scale="1">
+            <p>Slide 40</p>
+        </div>
+        <div class="step slide" data-x="3472" data-y="-3549" data-rotate="320" data-scale="1">
+            <p>Slide 41</p>
+        </div>
+        <div class="step slide" data-x="3886" data-y="-2978" data-rotate="328" data-scale="1">
+            <p>Slide 42</p>
+        </div>
+        <div class="step slide" data-x="4217" data-y="-2356" data-rotate="336" data-scale="1">
+            <p>Slide 43</p>
+        </div>
+        <div class="step slide" data-x="4459" data-y="-1693" data-rotate="344" data-scale="1">
+            <p>Slide 44</p>
+        </div>
         <div class="step slide credits" data-x="4605" data-y="-1003" data-rotate="352" data-scale="1">
-            <h2>
-                <font style="vertical-align: inherit;">
-                    <font style="vertical-align: inherit;">Creditos</font>
-                </font>
-            </h2>
-            <ul>
-                <li>
-                    <a href="http://bartaz.github.io/impress.js" target="_blank">
-                        <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;">impress.js</font>
-                        </font>
-                    </a>
-                    <font style="vertical-align: inherit;">
-                        <font style="vertical-align: inherit;"> - Bartek Szopka
-                        </font>
-                    </font>
-                </li>
-                <li>
-                    <a href="http://wmh.github.io/circular-slides-generator" target="_blank">
-                        <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;">Generador de portaobjetos circular</font>
-                        </font>
-                    </a>
-                    <font style="vertical-align: inherit;">
-                        <font style="vertical-align: inherit;"> - Hunter Wu
-                        </font>
-                    </font>
-                </li>
-            </ul>
+
         </div>
-        <div class="step" data-x="0" data-y="0" data-scale="19"></div>
+
     </div>
     <div id="impress-toolbar"></div>
     <div id="impress-help"></div>
