@@ -12,7 +12,9 @@
 
     <style>
         body{
-                background-image: url('img/c5ca1962.png');
+                /* background-image: url('img/c5ca1962.png'); */
+                background-color: #020002;
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%2392004d' fill-opacity='0.26'%3E%3Cpath fill-rule='evenodd' d='M0 0h40v40H0V0zm40 40h40v40H40V40zm0-40h2l-2 2V0zm0 4l4-4h2l-6 6V4zm0 4l8-8h2L40 10V8zm0 4L52 0h2L40 14v-2zm0 4L56 0h2L40 18v-2zm0 4L60 0h2L40 22v-2zm0 4L64 0h2L40 26v-2zm0 4L68 0h2L40 30v-2zm0 4L72 0h2L40 34v-2zm0 4L76 0h2L40 38v-2zm0 4L80 0v2L42 40h-2zm4 0L80 4v2L46 40h-2zm4 0L80 8v2L50 40h-2zm4 0l28-28v2L54 40h-2zm4 0l24-24v2L58 40h-2zm4 0l20-20v2L62 40h-2zm4 0l16-16v2L66 40h-2zm4 0l12-12v2L70 40h-2zm4 0l8-8v2l-6 6h-2zm4 0l4-4v2l-2 2h-2z'/%3E%3C/g%3E%3C/svg%3E");
             }
         </style>
 </head>
@@ -24,62 +26,94 @@
     </div>
 
     <div id="impress" data-transition-duration="2000">
-        <div id="overview" class="step sinSlide overview" data-x="2000" data-y="-1000" data-z="3500" data-scale="8"
+        <div id="overview" class="step sinSlide overview" data-x="300" data-y="-800" data-z="3500" data-scale="8"
             data-rotate-y="90" data-rotate-x="0" data-rotate-z="0" data-rotate-order="xyz">
             <h2 class="titulo">Posición, trayectoria y desplazamiento</h2>
         </div>
         <div class="step slide" data-x="1758" data-y="-299" data-rotate="0" data-scale="1">
-            <p>Slide 1</p>
+            <p class="texto">El camino que sigue un cuerpo al cambiar su posición es lo que llamamos trayectoria</p>
+            <center>
+                <img src="img/montaña.png" alt="">
+            </center>
         </div>
         <div class="step slide" data-x="1612" data-y="479" data-rotate="21.176470588235293" data-scale="1">
-            <p>Slide 2</p>
+            <p class="texto">Depende del sistema de referencia empleado </p>
+            <center>
+                <img src="img/avion.png" alt="" width="70%">
+            </center>
         </div>
-        <div class="step slide" data-x="1194" data-y="1153" data-rotate="42.35294117647059" data-scale="1">
-            <p>Slide 3</p>
+        <div class="step sinSlide" data-x="1194" data-y="1153" data-rotate="42.35294117647059" data-scale="1">
+            <h1>
+                Tipos de movimientos
+            </h1>
         </div>
         <div class="step slide" data-x="561" data-y="1631" data-rotate="63.529411764705884" data-scale="1">
-            <p>Slide 4</p>
+            <p class="texto">Un movimiento es rectilíneo si la trayectoria del cuerpo es una línea recta</p>
+            <center>
+                <img src="img/linea.png" alt="">
+            </center>
         </div>
         <div class="step slide" data-x="-200" data-y="1848" data-rotate="84.70588235294117" data-scale="1">
-            <p>Slide 5</p>
+            <p class="texto">Un movimiento es curvilíneo si la trayectoria del cuerpo es una línea curva</p>
+            <center>
+                <img src="img/circular.jpg" alt="" width="50%">
+            </center>
         </div>
         <div class="step slide" data-x="-990" data-y="1775" data-rotate="105.88235294117646" data-scale="1">
-            <p>Slide 6</p>
+            <img src="img/movimientosCurvilineos.PNG" alt="" width="100%">
         </div>
-        <div class="step slide" data-x="-1700" data-y="1422" data-rotate="127.05882352941177" data-scale="1">
-            <p>Slide 7</p>
+        <div class="step sinSlide" data-x="-1700" data-y="1422" data-rotate="127.05882352941177" data-scale="1">
+            <h1>
+                Sistema de referencia
+            </h1>
         </div>
         <div class="step slide" data-x="-2234" data-y="836" data-rotate="148.23529411764704" data-scale="1">
-            <p>Slide 8</p>
+            <p class="texto">Se elige un sistema de coordenadas cartesianas, de tal modo que uno de sus ejes coincida
+                con la trayectoria del objeto</p>
         </div>
-        <div class="step slide" data-x="-2521" data-y="96" data-rotate="169.41176470588235" data-scale="1">
-            <p>Slide 9</p>
+        <div class="step sinSlide" data-x="-2521" data-y="96" data-rotate="169.41176470588235" data-scale="1">
+            <h1>
+                Distancia recorrida
+            </h1>
         </div>
         <div class="step slide" data-x="-2521" data-y="-696" data-rotate="190.58823529411765" data-scale="1">
-            <p>Slide
-                10</p>
+            <p class="texto">Es la longitud del camino recorrido</p>
+            <center>
+                <img src="img/camino.png" alt="" width="50%">
+            </center>
         </div>
         <div class="step slide" data-x="-2234" data-y="-1436" data-rotate="211.76470588235293" data-scale="1">
-            <p>Slide
-                11</p>
+            <p class="texto">Si la trayectoria del móvil es una línea recta, la distancia recorrida (s) se puede
+                determinar en función de las posiciones inicial (x0) y final (x) por la siguiente ecuación:</p>
         </div>
         <div class="step slide" data-x="-1700" data-y="-2022" data-rotate="232.94117647058823" data-scale="1">
-            <p>Slide
-                12</p>
+            <span class="formula">
+                $$s = x - x_{0}$$
+            </span>
+            <span class="formula">
+                $$d = x - x_{0}$$
+            </span>
         </div>
-        <div class="step slide" data-x="-990" data-y="-2375" data-rotate="254.11764705882354" data-scale="1">
-            <p>Slide
-                13</p>
+        <div class="step sinSlide" data-x="-990" data-y="-2375" data-rotate="254.11764705882354" data-scale="1">
+            <h1>Desplazamiento</h1>
         </div>
         <div class="step slide" data-x="-200" data-y="-2448" data-rotate="275.29411764705884" data-scale="1">
-            <p>Slide
-                14</p>
+            <p class="texto">Describe el cambio de posición de un objeto durante su movimiento</p>
+            <center>
+                <img src="img/desplazamiento1.gif" alt="" width="60%">
+            </center>
         </div>
         <div class="step slide" data-x="561" data-y="-2231" data-rotate="296.4705882352941" data-scale="1">
-            <p>Slide 15</p>
+            <p class="texto">Se representa por un vector cuyo origen se ubica en la posición inicial y el extremo señala la posición final</p>
+           <center>
+               <img src="img/desplazamiento2.gif" alt="" width="50%">
+           </center>
         </div>
         <div class="step slide" data-x="1194" data-y="-1753" data-rotate="317.6470588235294" data-scale="1">
-            <p>Slide 16</p>
+            <p>Determina: <br> a) La distancia recorrida <br> b)El desplazamiento total recorrido  </p>
+            <center>
+                <img src="img/hormiga.png" alt="" width="70%">
+            </center>
         </div>
         <div class="step slide credits" data-x="1612" data-y="-1079" data-rotate="338.8235294117647" data-scale="1">
 
