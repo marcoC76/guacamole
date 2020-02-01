@@ -2,24 +2,99 @@
 <html lang="es" manifest="presenta.appcache">
 
 <head>
-    <meta charset="utf-8" />
-    <title>Presentaciones de física 1</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="materialize.min.css">
-
-
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Guacamole | Presentaciones</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" type="image/png" href="waffle_1.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#152510">
 </head>
+<style>
+    @font-face {
+        font-family: "Waffle";
+        src: url("Welcome.woff");
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    nav {
+        font-family: "Waffle";
+
+        background: linear-gradient(213deg, rgba(191, 191, 191, 0.02) 0%, rgba(191, 191, 191, 0.02) 16.667%, rgba(64, 64, 64, 0.02) 16.667%, rgba(64, 64, 64, 0.02) 33.334%, rgba(162, 162, 162, 0.02) 33.334%, rgba(162, 162, 162, 0.02) 50.001000000000005%, rgba(6, 6, 6, 0.02) 50.001%, rgba(6, 6, 6, 0.02) 66.668%, rgba(53, 53, 53, 0.02) 66.668%, rgba(53, 53, 53, 0.02) 83.33500000000001%, rgba(30, 30, 30, 0.02) 83.335%, rgba(30, 30, 30, 0.02) 100.002%), linear-gradient(245deg, rgba(187, 187, 187, 0.02) 0%, rgba(187, 187, 187, 0.02) 12.5%, rgba(231, 231, 231, 0.02) 12.5%, rgba(231, 231, 231, 0.02) 25%, rgba(123, 123, 123, 0.02) 25%, rgba(123, 123, 123, 0.02) 37.5%, rgba(229, 229, 229, 0.02) 37.5%, rgba(229, 229, 229, 0.02) 50%, rgba(205, 205, 205, 0.02) 50%, rgba(205, 205, 205, 0.02) 62.5%, rgba(21, 21, 21, 0.02) 62.5%, rgba(21, 21, 21, 0.02) 75%, rgba(222, 222, 222, 0.02) 75%, rgba(222, 222, 222, 0.02) 87.5%, rgba(19, 19, 19, 0.02) 87.5%, rgba(19, 19, 19, 0.02) 100%), linear-gradient(333deg, rgba(128, 128, 128, 0.02) 0%, rgba(128, 128, 128, 0.02) 25%, rgba(235, 235, 235, 0.02) 25%, rgba(235, 235, 235, 0.02) 50%, rgba(129, 129, 129, 0.02) 50%, rgba(129, 129, 129, 0.02) 75%, rgba(4, 4, 4, 0.02) 75%, rgba(4, 4, 4, 0.02) 100%), linear-gradient(154deg, rgba(241, 241, 241, 0.03) 0%, rgba(241, 241, 241, 0.03) 16.667%, rgba(248, 248, 248, 0.03) 16.667%, rgba(248, 248, 248, 0.03) 33.334%, rgba(21, 21, 21, 0.03) 33.334%, rgba(21, 21, 21, 0.03) 50.001000000000005%, rgba(94, 94, 94, 0.03) 50.001%, rgba(94, 94, 94, 0.03) 66.668%, rgba(250, 250, 250, 0.03) 66.668%, rgba(250, 250, 250, 0.03) 83.33500000000001%, rgba(5, 5, 5, 0.03) 83.335%, rgba(5, 5, 5, 0.03) 100.002%), linear-gradient(166deg, rgba(104, 104, 104, 0.01) 0%, rgba(104, 104, 104, 0.01) 12.5%, rgba(77, 77, 77, 0.01) 12.5%, rgba(77, 77, 77, 0.01) 25%, rgba(13, 13, 13, 0.01) 25%, rgba(13, 13, 13, 0.01) 37.5%, rgba(194, 194, 194, 0.01) 37.5%, rgba(194, 194, 194, 0.01) 50%, rgba(71, 71, 71, 0.01) 50%, rgba(71, 71, 71, 0.01) 62.5%, rgba(234, 234, 234, 0.01) 62.5%, rgba(234, 234, 234, 0.01) 75%, rgba(38, 38, 38, 0.01) 75%, rgba(38, 38, 38, 0.01) 87.5%, rgba(95, 95, 95, 0.01) 87.5%, rgba(95, 95, 95, 0.01) 100%), linear-gradient(98deg, rgba(253, 253, 253, 0.03) 0%, rgba(253, 253, 253, 0.03) 12.5%, rgba(126, 126, 126, 0.03) 12.5%, rgba(126, 126, 126, 0.03) 25%, rgba(145, 145, 145, 0.03) 25%, rgba(145, 145, 145, 0.03) 37.5%, rgba(70, 70, 70, 0.03) 37.5%, rgba(70, 70, 70, 0.03) 50%, rgba(174, 174, 174, 0.03) 50%, rgba(174, 174, 174, 0.03) 62.5%, rgba(77, 77, 77, 0.03) 62.5%, rgba(77, 77, 77, 0.03) 75%, rgba(123, 123, 123, 0.03) 75%, rgba(123, 123, 123, 0.03) 87.5%, rgba(36, 36, 36, 0.03) 87.5%, rgba(36, 36, 36, 0.03) 100%), linear-gradient(293deg, rgba(55, 55, 55, 0.03) 0%, rgba(55, 55, 55, 0.03) 20%, rgba(142, 142, 142, 0.03) 20%, rgba(142, 142, 142, 0.03) 40%, rgba(159, 159, 159, 0.03) 40%, rgba(159, 159, 159, 0.03) 60%, rgba(139, 139, 139, 0.03) 60%, rgba(139, 139, 139, 0.03) 80%, rgba(9, 9, 9, 0.03) 80%, rgba(9, 9, 9, 0.03) 100%), linear-gradient(26deg, rgba(116, 116, 116, 0.01) 0%, rgba(116, 116, 116, 0.01) 20%, rgba(179, 179, 179, 0.01) 20%, rgba(179, 179, 179, 0.01) 40%, rgba(5, 5, 5, 0.01) 40%, rgba(5, 5, 5, 0.01) 60%, rgba(212, 212, 212, 0.01) 60%, rgba(212, 212, 212, 0.01) 80%, rgba(246, 246, 246, 0.01) 80%, rgba(246, 246, 246, 0.01) 100%), linear-gradient(90deg, rgb(87, 178, 35), #152510);
+    }
+
+    nav .brand-logo {
+        top: 0%;
+        right: 1%;
+        font-size: 5em;
+
+    }
+
+    .waffle {
+        font-family: "Waffle";
+        font-size: 3em;
+    }
+
+
+    #navfondo {
+        filter: hue-rotate(270grad);
+
+    }
+
+    body {
+        background-image: linear-gradient(292deg, rgba(150, 150, 150, 0.03) 0%, rgba(150, 150, 150, 0.03) 20%, rgba(151, 151, 151, 0.03) 20%, rgba(151, 151, 151, 0.03) 40%, rgba(215, 215, 215, 0.03) 40%, rgba(215, 215, 215, 0.03) 60%, rgba(254, 254, 254, 0.03) 60%, rgba(254, 254, 254, 0.03) 80%, rgba(112, 112, 112, 0.03) 80%, rgba(112, 112, 112, 0.03) 100%), linear-gradient(62deg, rgba(34, 34, 34, 0.03) 0%, rgba(34, 34, 34, 0.03) 20%, rgba(171, 171, 171, 0.03) 20%, rgba(171, 171, 171, 0.03) 40%, rgba(206, 206, 206, 0.03) 40%, rgba(206, 206, 206, 0.03) 60%, rgba(210, 210, 210, 0.03) 60%, rgba(210, 210, 210, 0.03) 80%, rgba(69, 69, 69, 0.03) 80%, rgba(69, 69, 69, 0.03) 100%), linear-gradient(314deg, rgba(235, 235, 235, 0.03) 0%, rgba(235, 235, 235, 0.03) 20%, rgba(254, 254, 254, 0.03) 20%, rgba(254, 254, 254, 0.03) 40%, rgba(178, 178, 178, 0.03) 40%, rgba(178, 178, 178, 0.03) 60%, rgba(211, 211, 211, 0.03) 60%, rgba(211, 211, 211, 0.03) 80%, rgba(73, 73, 73, 0.03) 80%, rgba(73, 73, 73, 0.03) 100%), linear-gradient(32deg, rgba(182, 182, 182, 0.01) 0%, rgba(182, 182, 182, 0.01) 12.5%, rgba(208, 208, 208, 0.01) 12.5%, rgba(208, 208, 208, 0.01) 25%, rgba(178, 178, 178, 0.01) 25%, rgba(178, 178, 178, 0.01) 37.5%, rgba(143, 143, 143, 0.01) 37.5%, rgba(143, 143, 143, 0.01) 50%, rgba(211, 211, 211, 0.01) 50%, rgba(211, 211, 211, 0.01) 62.5%, rgba(92, 92, 92, 0.01) 62.5%, rgba(92, 92, 92, 0.01) 75%, rgba(56, 56, 56, 0.01) 75%, rgba(56, 56, 56, 0.01) 87.5%, rgba(253, 253, 253, 0.01) 87.5%, rgba(253, 253, 253, 0.01) 100%), linear-gradient(247deg, rgba(103, 103, 103, 0.02) 0%, rgba(103, 103, 103, 0.02) 12.5%, rgba(240, 240, 240, 0.02) 12.5%, rgba(240, 240, 240, 0.02) 25%, rgba(18, 18, 18, 0.02) 25%, rgba(18, 18, 18, 0.02) 37.5%, rgba(38, 38, 38, 0.02) 37.5%, rgba(38, 38, 38, 0.02) 50%, rgba(246, 246, 246, 0.02) 50%, rgba(246, 246, 246, 0.02) 62.5%, rgba(9, 9, 9, 0.02) 62.5%, rgba(9, 9, 9, 0.02) 75%, rgba(167, 167, 167, 0.02) 75%, rgba(167, 167, 167, 0.02) 87.5%, rgba(86, 86, 86, 0.02) 87.5%, rgba(86, 86, 86, 0.02) 100%), linear-gradient(90deg, hsl(194, 0%, 10%), #191919);
+        color: white;
+    }
+
+    .sidenav {
+        background-image: linear-gradient(90deg, #FFF 0%, transparent 100%), linear-gradient(0deg, transparent 0%, #FFF 100%), linear-gradient(45deg, rgba(167, 167, 167, 0.07) 0%, rgba(167, 167, 167, 0.07) 64%, rgba(220, 220, 220, 0.07) 64%, rgba(220, 220, 220, 0.07) 100%), linear-gradient(0deg, rgba(7, 7, 7, 0.18) 0%, rgba(7, 7, 7, 0.18) 5%, rgba(7, 7, 7, 0.18) 5%, rgba(7, 7, 7, 0.18) 100%), linear-gradient(0deg, rgba(107, 107, 107, 0.15) 0%, rgba(107, 107, 107, 0.15) 49%, rgba(238, 238, 238, 0.15) 49%, rgba(238, 238, 238, 0.15) 100%), linear-gradient(45deg, rgba(177, 177, 177, 0.03) 0%, rgba(177, 177, 177, 0.03) 16%, rgba(196, 196, 196, 0.03) 16%, rgba(196, 196, 196, 0.03) 100%), linear-gradient(90deg, rgba(2, 2, 2, 0.2) 0%, rgba(2, 2, 2, 0.2) 80%, rgba(184, 184, 184, 0.2) 80%, rgba(184, 184, 184, 0.2) 100%), linear-gradient(45deg, rgba(49, 49, 49, 0.26) 0%, rgba(49, 49, 49, 0.26) 91%, rgba(47, 47, 47, 0.26) 91%, rgba(47, 47, 47, 0.26) 100%), linear-gradient(135deg, rgba(230, 230, 230, 0.27) 0%, rgba(230, 230, 230, 0.27) 85%, rgba(46, 46, 46, 0.27) 85%, rgba(46, 46, 46, 0.27) 100%), linear-gradient(90deg, rgba(41, 41, 41, 0.07) 0%, rgba(41, 41, 41, 0.07) 81%, rgba(16, 16, 16, 0.07) 81%, rgba(16, 16, 16, 0.07) 100%), linear-gradient(90deg, rgb(173, 173, 173), rgb(50, 50, 50));
+    }
+
+    .card {
+        background-image: linear-gradient(213deg, rgba(191, 191, 191, 0.02) 0%, rgba(191, 191, 191, 0.02) 16.667%, rgba(64, 64, 64, 0.02) 16.667%, rgba(64, 64, 64, 0.02) 33.334%, rgba(162, 162, 162, 0.02) 33.334%, rgba(162, 162, 162, 0.02) 50.001000000000005%, rgba(6, 6, 6, 0.02) 50.001%, rgba(6, 6, 6, 0.02) 66.668%, rgba(53, 53, 53, 0.02) 66.668%, rgba(53, 53, 53, 0.02) 83.33500000000001%, rgba(30, 30, 30, 0.02) 83.335%, rgba(30, 30, 30, 0.02) 100.002%), linear-gradient(245deg, rgba(187, 187, 187, 0.02) 0%, rgba(187, 187, 187, 0.02) 12.5%, rgba(231, 231, 231, 0.02) 12.5%, rgba(231, 231, 231, 0.02) 25%, rgba(123, 123, 123, 0.02) 25%, rgba(123, 123, 123, 0.02) 37.5%, rgba(229, 229, 229, 0.02) 37.5%, rgba(229, 229, 229, 0.02) 50%, rgba(205, 205, 205, 0.02) 50%, rgba(205, 205, 205, 0.02) 62.5%, rgba(21, 21, 21, 0.02) 62.5%, rgba(21, 21, 21, 0.02) 75%, rgba(222, 222, 222, 0.02) 75%, rgba(222, 222, 222, 0.02) 87.5%, rgba(19, 19, 19, 0.02) 87.5%, rgba(19, 19, 19, 0.02) 100%), linear-gradient(333deg, rgba(128, 128, 128, 0.02) 0%, rgba(128, 128, 128, 0.02) 25%, rgba(235, 235, 235, 0.02) 25%, rgba(235, 235, 235, 0.02) 50%, rgba(129, 129, 129, 0.02) 50%, rgba(129, 129, 129, 0.02) 75%, rgba(4, 4, 4, 0.02) 75%, rgba(4, 4, 4, 0.02) 100%), linear-gradient(154deg, rgba(241, 241, 241, 0.03) 0%, rgba(241, 241, 241, 0.03) 16.667%, rgba(248, 248, 248, 0.03) 16.667%, rgba(248, 248, 248, 0.03) 33.334%, rgba(21, 21, 21, 0.03) 33.334%, rgba(21, 21, 21, 0.03) 50.001000000000005%, rgba(94, 94, 94, 0.03) 50.001%, rgba(94, 94, 94, 0.03) 66.668%, rgba(250, 250, 250, 0.03) 66.668%, rgba(250, 250, 250, 0.03) 83.33500000000001%, rgba(5, 5, 5, 0.03) 83.335%, rgba(5, 5, 5, 0.03) 100.002%), linear-gradient(166deg, rgba(104, 104, 104, 0.01) 0%, rgba(104, 104, 104, 0.01) 12.5%, rgba(77, 77, 77, 0.01) 12.5%, rgba(77, 77, 77, 0.01) 25%, rgba(13, 13, 13, 0.01) 25%, rgba(13, 13, 13, 0.01) 37.5%, rgba(194, 194, 194, 0.01) 37.5%, rgba(194, 194, 194, 0.01) 50%, rgba(71, 71, 71, 0.01) 50%, rgba(71, 71, 71, 0.01) 62.5%, rgba(234, 234, 234, 0.01) 62.5%, rgba(234, 234, 234, 0.01) 75%, rgba(38, 38, 38, 0.01) 75%, rgba(38, 38, 38, 0.01) 87.5%, rgba(95, 95, 95, 0.01) 87.5%, rgba(95, 95, 95, 0.01) 100%), linear-gradient(98deg, rgba(253, 253, 253, 0.03) 0%, rgba(253, 253, 253, 0.03) 12.5%, rgba(126, 126, 126, 0.03) 12.5%, rgba(126, 126, 126, 0.03) 25%, rgba(145, 145, 145, 0.03) 25%, rgba(145, 145, 145, 0.03) 37.5%, rgba(70, 70, 70, 0.03) 37.5%, rgba(70, 70, 70, 0.03) 50%, rgba(174, 174, 174, 0.03) 50%, rgba(174, 174, 174, 0.03) 62.5%, rgba(77, 77, 77, 0.03) 62.5%, rgba(77, 77, 77, 0.03) 75%, rgba(123, 123, 123, 0.03) 75%, rgba(123, 123, 123, 0.03) 87.5%, rgba(36, 36, 36, 0.03) 87.5%, rgba(36, 36, 36, 0.03) 100%), linear-gradient(293deg, rgba(55, 55, 55, 0.03) 0%, rgba(55, 55, 55, 0.03) 20%, rgba(142, 142, 142, 0.03) 20%, rgba(142, 142, 142, 0.03) 40%, rgba(159, 159, 159, 0.03) 40%, rgba(159, 159, 159, 0.03) 60%, rgba(139, 139, 139, 0.03) 60%, rgba(139, 139, 139, 0.03) 80%, rgba(9, 9, 9, 0.03) 80%, rgba(9, 9, 9, 0.03) 100%), linear-gradient(26deg, rgba(116, 116, 116, 0.01) 0%, rgba(116, 116, 116, 0.01) 20%, rgba(179, 179, 179, 0.01) 20%, rgba(179, 179, 179, 0.01) 40%, rgba(5, 5, 5, 0.01) 40%, rgba(5, 5, 5, 0.01) 60%, rgba(212, 212, 212, 0.01) 60%, rgba(212, 212, 212, 0.01) 80%, rgba(246, 246, 246, 0.01) 80%, rgba(246, 246, 246, 0.01) 100%), linear-gradient(90deg, rgb(87, 178, 35), rgb(21, 37, 16));
+        border-radius: 10px 10px 10px 10px;
+    }
+
+    .card-image>img {
+        border-radius: 10px 10px 10px 10px;
+    }
+</style>
 
 <body class="blue-grey lighten-5">
-    <nav>
-        <div class="nav-wrapper black">
-            <span class="brand-logo center text-withe">Presentaciones</span>
-            <ul id="nav-mobile" class="left hide-on-med-and-down">
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper ">
+                <span class="brand-logo center text-withe">Guacamole</span>
+            </div>
+        </nav>
 
-            </ul>
-        </div>
-    </nav>
+    </div>
     <div class="container">
+        <ul id="slide-out" class="sidenav">
+            <li>
+                <div class="user-view">
+                    <div id="navfondo" class="background">
+                        <img style="filter: blur(2px) contrast(200%) brightness(50%);"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQjDlm90R32ThIkj97HsmkY3P6zzymiI6Pf7EJ6f7kEjMBRhudF">
+                    </div>
+                    <a><img src="img/guacamole.png" width="25%"></a>
+                    <a> <span class="white-text name">
+                            <sapan class="waffle">Guacamole</sapan> | Presentaciones
+                        </span></a>
+                    <a><span class="white-text email">Física 1</span></a>
+                </div>
+            </li>
+            <li><a class="waves-effect" href="#Primer"><i class="material-icons">laptop_chromebook</i>Primer Periodo</a>
+            </li>
+            <li><a class="waves-effect" href="#Segundo"><i class="material-icons">memory</i>Segundo Periodo</a></li>
+            <li><a class="waves-effect" href="#Tercer"><i class="material-icons">lock</i>Tercer Periodo</a></li>
+
+        </ul>
         <br>
         <div class="row">
 
@@ -30,8 +105,7 @@
 
                         <a class=" btn-floating btn-large halfway-fab waves-effect waves-light blue-darken pulse"
                             href="http://marcoc76.github.io/guacamole/slides-classroom.html">
-                            <img
-                                src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjY0cHgiIGhlaWdodD0iNjRweCI+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTQ3Ny42MDYsMTI4LjA1NUM0NDMuNDMxLDY4Ljg2MywzODguMjUxLDI2LjUyLDMyMi4yMjksOC44M0MyNTYuMjA4LTguODYyLDE4Ny4yNSwwLjIxNywxMjguMDU1LDM0LjM5NCAgICBDNjguODYxLDY4LjU3LDI2LjUyLDEyMy43NSw4LjgzLDE4OS43NzJjLTE3LjY5LDY2LjAyMS04LjYxMSwxMzQuOTgxLDI1LjU2NCwxOTQuMTczICAgIEM2OC41NjgsNDQzLjEzNywxMjMuNzUsNDg1LjQ4LDE4OS43NzEsNTAzLjE3YzIyLjA0Niw1LjkwOCw0NC40MTcsOC44Myw2Ni42NDYsOC44M2M0NC4zMzksMCw4OC4xMDEtMTEuNjI5LDEyNy41MjktMzQuMzkzICAgIGM1OS4xOTItMzQuMTc1LDEwMS41MzUtODkuMzU1LDExOS4yMjUtMTU1LjM3N0M1MjAuODYyLDI1Ni4yMDcsNTExLjc4MSwxODcuMjQ5LDQ3Ny42MDYsMTI4LjA1NXogTTQ3Ny40MjksMzE1LjMzMyAgICBjLTE1Ljg0OCw1OS4xNDYtNTMuNzgsMTA4LjU4MS0xMDYuODEsMTM5LjE5N2MtNTMuMDI4LDMwLjYxNy0xMTQuODA2LDM4Ljc0OS0xNzMuOTUyLDIyLjkwMyAgICBjLTU5LjE0Ny0xNS44NDgtMTA4LjU4MS01My43OC0xMzkuMTk4LTEwNi44MWMtMzAuNjE2LTUzLjAyOC0zOC43NDktMTE0LjgwNy0yMi45LTE3My45NTQgICAgQzUwLjQxOCwxMzcuNTIzLDg4LjM1LDg4LjA5LDE0MS4zNzksNTcuNDcyYzM1LjMyNS0yMC4zOTUsNzQuNTI0LTMwLjgxMiwxMTQuMjQ5LTMwLjgxMmMxOS45MSwwLDM5Ljk1OSwyLjYxOCw1OS43MDIsNy45MDkgICAgYzU5LjE0NiwxNS44NDgsMTA4LjU4MSw1My43OCwxMzkuMTk3LDEwNi44MUM0ODUuMTQ0LDE5NC40MDgsNDkzLjI3OCwyNTYuMTg2LDQ3Ny40MjksMzE1LjMzM3oiIGZpbGw9IiNGRkZGRkYiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik0zNzguNzc4LDIzMS44NTJsLTE2NC41MjYtOTQuOTljLTguNzMxLTUuMDQxLTE5LjE1NS01LjAzOS0yNy44ODYtMC4wMDFjLTguNzMxLDUuMDQtMTMuOTQ0LDE0LjA2OS0xMy45NDQsMjQuMTV2MTg5Ljk4ICAgIGMwLDEwLjA4MSw1LjIxMiwxOS4xMDksMTMuOTQ0LDI0LjE1YzQuMzY1LDIuNTIxLDkuMTUyLDMuNzgsMTMuOTQxLDMuNzhjNC43OSwwLDkuNTc5LTEuMjYyLDEzLjk0NC0zLjc4MWwxNjQuNTI4LTk0Ljk4OSAgICBjOC43My01LjA0MiwxMy45NDEtMTQuMDcsMTMuOTQxLTI0LjE1MUMzOTIuNzIsMjQ1LjkyLDM4Ny41MDgsMjM2Ljg5MiwzNzguNzc4LDIzMS44NTJ6IE0zNjUuNDUyLDI1Ny4wNzRsLTE2NC41MjcsOTQuOTg5ICAgIGMtMC4yMDEsMC4xMTctMC42MiwwLjM1OC0xLjIzNiwwYy0wLjYxOC0wLjM1Ny0wLjYxOC0wLjgzOS0wLjYxOC0xLjA3MXYtMTg5Ljk4YzAtMC4yMzIsMC0wLjcxNCwwLjYxOC0xLjA3MSAgICBjMC4yNDItMC4xNCwwLjQ1My0wLjE4OCwwLjYzMy0wLjE4OGMwLjI4LDAsMC40ODIsMC4xMTcsMC42MDUsMC4xODhsMTY0LjUyNiw5NC45OWMwLjIwMSwwLjExNiwwLjYxOCwwLjM1NywwLjYxOCwxLjA3MSAgICBDMzY2LjA3MSwyNTYuNzE2LDM2NS42NTIsMjU2Ljk1OCwzNjUuNDUyLDI1Ny4wNzR6IiBmaWxsPSIjRkZGRkZGIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNDEzLjMwMywxMzQuNDRjLTMxLjY4OS00MC45MzgtNzkuMzI2LTY4LjQ0Mi0xMzAuNjk4LTc1LjQ2MWMtNy4yODMtMC45OTctMTQuMDA5LDQuMTA2LTE1LjAwNiwxMS4zOTkgICAgYy0wLjk5NSw3LjI5MSw0LjEwOCwxNC4wMDksMTEuMzk5LDE1LjAwNmM0NC41MTIsNi4wODEsODUuNzgzLDI5LjkwOSwxMTMuMjMyLDY1LjM2OWMyLjYyNiwzLjM5Miw2LjU2NSw1LjE2OCwxMC41NDYsNS4xNjggICAgYzIuODQ5LDAsNS43Mi0wLjkwOSw4LjE0Ni0yLjc4OUM0MTYuNzQxLDE0OC42MjgsNDE3LjgwNywxNDAuMjU5LDQxMy4zMDMsMTM0LjQ0eiIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />
+                            <img src="img/guacamole (2).png" />
                         </a>
                     </div>
                     <div class="card-content">
@@ -47,8 +121,7 @@
 
                         <a class=" btn-floating btn-large halfway-fab waves-effect waves-light blue-darken pulse"
                             href="http://marcoc76.github.io/guacamole/curso.html">
-                            <img
-                                src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjY0cHgiIGhlaWdodD0iNjRweCI+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTQ3Ny42MDYsMTI4LjA1NUM0NDMuNDMxLDY4Ljg2MywzODguMjUxLDI2LjUyLDMyMi4yMjksOC44M0MyNTYuMjA4LTguODYyLDE4Ny4yNSwwLjIxNywxMjguMDU1LDM0LjM5NCAgICBDNjguODYxLDY4LjU3LDI2LjUyLDEyMy43NSw4LjgzLDE4OS43NzJjLTE3LjY5LDY2LjAyMS04LjYxMSwxMzQuOTgxLDI1LjU2NCwxOTQuMTczICAgIEM2OC41NjgsNDQzLjEzNywxMjMuNzUsNDg1LjQ4LDE4OS43NzEsNTAzLjE3YzIyLjA0Niw1LjkwOCw0NC40MTcsOC44Myw2Ni42NDYsOC44M2M0NC4zMzksMCw4OC4xMDEtMTEuNjI5LDEyNy41MjktMzQuMzkzICAgIGM1OS4xOTItMzQuMTc1LDEwMS41MzUtODkuMzU1LDExOS4yMjUtMTU1LjM3N0M1MjAuODYyLDI1Ni4yMDcsNTExLjc4MSwxODcuMjQ5LDQ3Ny42MDYsMTI4LjA1NXogTTQ3Ny40MjksMzE1LjMzMyAgICBjLTE1Ljg0OCw1OS4xNDYtNTMuNzgsMTA4LjU4MS0xMDYuODEsMTM5LjE5N2MtNTMuMDI4LDMwLjYxNy0xMTQuODA2LDM4Ljc0OS0xNzMuOTUyLDIyLjkwMyAgICBjLTU5LjE0Ny0xNS44NDgtMTA4LjU4MS01My43OC0xMzkuMTk4LTEwNi44MWMtMzAuNjE2LTUzLjAyOC0zOC43NDktMTE0LjgwNy0yMi45LTE3My45NTQgICAgQzUwLjQxOCwxMzcuNTIzLDg4LjM1LDg4LjA5LDE0MS4zNzksNTcuNDcyYzM1LjMyNS0yMC4zOTUsNzQuNTI0LTMwLjgxMiwxMTQuMjQ5LTMwLjgxMmMxOS45MSwwLDM5Ljk1OSwyLjYxOCw1OS43MDIsNy45MDkgICAgYzU5LjE0NiwxNS44NDgsMTA4LjU4MSw1My43OCwxMzkuMTk3LDEwNi44MUM0ODUuMTQ0LDE5NC40MDgsNDkzLjI3OCwyNTYuMTg2LDQ3Ny40MjksMzE1LjMzM3oiIGZpbGw9IiNGRkZGRkYiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik0zNzguNzc4LDIzMS44NTJsLTE2NC41MjYtOTQuOTljLTguNzMxLTUuMDQxLTE5LjE1NS01LjAzOS0yNy44ODYtMC4wMDFjLTguNzMxLDUuMDQtMTMuOTQ0LDE0LjA2OS0xMy45NDQsMjQuMTV2MTg5Ljk4ICAgIGMwLDEwLjA4MSw1LjIxMiwxOS4xMDksMTMuOTQ0LDI0LjE1YzQuMzY1LDIuNTIxLDkuMTUyLDMuNzgsMTMuOTQxLDMuNzhjNC43OSwwLDkuNTc5LTEuMjYyLDEzLjk0NC0zLjc4MWwxNjQuNTI4LTk0Ljk4OSAgICBjOC43My01LjA0MiwxMy45NDEtMTQuMDcsMTMuOTQxLTI0LjE1MUMzOTIuNzIsMjQ1LjkyLDM4Ny41MDgsMjM2Ljg5MiwzNzguNzc4LDIzMS44NTJ6IE0zNjUuNDUyLDI1Ny4wNzRsLTE2NC41MjcsOTQuOTg5ICAgIGMtMC4yMDEsMC4xMTctMC42MiwwLjM1OC0xLjIzNiwwYy0wLjYxOC0wLjM1Ny0wLjYxOC0wLjgzOS0wLjYxOC0xLjA3MXYtMTg5Ljk4YzAtMC4yMzIsMC0wLjcxNCwwLjYxOC0xLjA3MSAgICBjMC4yNDItMC4xNCwwLjQ1My0wLjE4OCwwLjYzMy0wLjE4OGMwLjI4LDAsMC40ODIsMC4xMTcsMC42MDUsMC4xODhsMTY0LjUyNiw5NC45OWMwLjIwMSwwLjExNiwwLjYxOCwwLjM1NywwLjYxOCwxLjA3MSAgICBDMzY2LjA3MSwyNTYuNzE2LDM2NS42NTIsMjU2Ljk1OCwzNjUuNDUyLDI1Ny4wNzR6IiBmaWxsPSIjRkZGRkZGIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNDEzLjMwMywxMzQuNDRjLTMxLjY4OS00MC45MzgtNzkuMzI2LTY4LjQ0Mi0xMzAuNjk4LTc1LjQ2MWMtNy4yODMtMC45OTctMTQuMDA5LDQuMTA2LTE1LjAwNiwxMS4zOTkgICAgYy0wLjk5NSw3LjI5MSw0LjEwOCwxNC4wMDksMTEuMzk5LDE1LjAwNmM0NC41MTIsNi4wODEsODUuNzgzLDI5LjkwOSwxMTMuMjMyLDY1LjM2OWMyLjYyNiwzLjM5Miw2LjU2NSw1LjE2OCwxMC41NDYsNS4xNjggICAgYzIuODQ5LDAsNS43Mi0wLjkwOSw4LjE0Ni0yLjc4OUM0MTYuNzQxLDE0OC42MjgsNDE3LjgwNywxNDAuMjU5LDQxMy4zMDMsMTM0LjQ0eiIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />
+                            <img src="img/guacamole (2).png" />
                         </a>
                     </div>
                     <div class="card-content">
@@ -58,196 +131,190 @@
             </div>
 
         </div>
-        <h1 class="black-text">Primer Periodo</h1>
-        <hr>
-        <div class="row">
+        <section id="Primer">
+            <h1 class="white-text">Primer Periodo</h1>
+            <hr>
+            <div class="row">
 
-            <div class="col s12 m4">
-                <div class="card z-depth-5 hoverable">
-                    <div class="card-image">
-                        <img src="img/Licenciatura-em-Fisica-16.jpg">
+                <div class="col s12 m4">
+                    <div class="card z-depth-5 hoverable">
+                        <div class="card-image">
+                            <img src="img/Licenciatura-em-Fisica-16.jpg">
 
-                        <a class=" btn-floating btn-large halfway-fab waves-effect waves-light blue-darken pulse"
-                            href="http://marcoc76.github.io/guacamole/Introduccion.html">
-                            <img
-                                src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjY0cHgiIGhlaWdodD0iNjRweCI+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTQ3Ny42MDYsMTI4LjA1NUM0NDMuNDMxLDY4Ljg2MywzODguMjUxLDI2LjUyLDMyMi4yMjksOC44M0MyNTYuMjA4LTguODYyLDE4Ny4yNSwwLjIxNywxMjguMDU1LDM0LjM5NCAgICBDNjguODYxLDY4LjU3LDI2LjUyLDEyMy43NSw4LjgzLDE4OS43NzJjLTE3LjY5LDY2LjAyMS04LjYxMSwxMzQuOTgxLDI1LjU2NCwxOTQuMTczICAgIEM2OC41NjgsNDQzLjEzNywxMjMuNzUsNDg1LjQ4LDE4OS43NzEsNTAzLjE3YzIyLjA0Niw1LjkwOCw0NC40MTcsOC44Myw2Ni42NDYsOC44M2M0NC4zMzksMCw4OC4xMDEtMTEuNjI5LDEyNy41MjktMzQuMzkzICAgIGM1OS4xOTItMzQuMTc1LDEwMS41MzUtODkuMzU1LDExOS4yMjUtMTU1LjM3N0M1MjAuODYyLDI1Ni4yMDcsNTExLjc4MSwxODcuMjQ5LDQ3Ny42MDYsMTI4LjA1NXogTTQ3Ny40MjksMzE1LjMzMyAgICBjLTE1Ljg0OCw1OS4xNDYtNTMuNzgsMTA4LjU4MS0xMDYuODEsMTM5LjE5N2MtNTMuMDI4LDMwLjYxNy0xMTQuODA2LDM4Ljc0OS0xNzMuOTUyLDIyLjkwMyAgICBjLTU5LjE0Ny0xNS44NDgtMTA4LjU4MS01My43OC0xMzkuMTk4LTEwNi44MWMtMzAuNjE2LTUzLjAyOC0zOC43NDktMTE0LjgwNy0yMi45LTE3My45NTQgICAgQzUwLjQxOCwxMzcuNTIzLDg4LjM1LDg4LjA5LDE0MS4zNzksNTcuNDcyYzM1LjMyNS0yMC4zOTUsNzQuNTI0LTMwLjgxMiwxMTQuMjQ5LTMwLjgxMmMxOS45MSwwLDM5Ljk1OSwyLjYxOCw1OS43MDIsNy45MDkgICAgYzU5LjE0NiwxNS44NDgsMTA4LjU4MSw1My43OCwxMzkuMTk3LDEwNi44MUM0ODUuMTQ0LDE5NC40MDgsNDkzLjI3OCwyNTYuMTg2LDQ3Ny40MjksMzE1LjMzM3oiIGZpbGw9IiNGRkZGRkYiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik0zNzguNzc4LDIzMS44NTJsLTE2NC41MjYtOTQuOTljLTguNzMxLTUuMDQxLTE5LjE1NS01LjAzOS0yNy44ODYtMC4wMDFjLTguNzMxLDUuMDQtMTMuOTQ0LDE0LjA2OS0xMy45NDQsMjQuMTV2MTg5Ljk4ICAgIGMwLDEwLjA4MSw1LjIxMiwxOS4xMDksMTMuOTQ0LDI0LjE1YzQuMzY1LDIuNTIxLDkuMTUyLDMuNzgsMTMuOTQxLDMuNzhjNC43OSwwLDkuNTc5LTEuMjYyLDEzLjk0NC0zLjc4MWwxNjQuNTI4LTk0Ljk4OSAgICBjOC43My01LjA0MiwxMy45NDEtMTQuMDcsMTMuOTQxLTI0LjE1MUMzOTIuNzIsMjQ1LjkyLDM4Ny41MDgsMjM2Ljg5MiwzNzguNzc4LDIzMS44NTJ6IE0zNjUuNDUyLDI1Ny4wNzRsLTE2NC41MjcsOTQuOTg5ICAgIGMtMC4yMDEsMC4xMTctMC42MiwwLjM1OC0xLjIzNiwwYy0wLjYxOC0wLjM1Ny0wLjYxOC0wLjgzOS0wLjYxOC0xLjA3MXYtMTg5Ljk4YzAtMC4yMzIsMC0wLjcxNCwwLjYxOC0xLjA3MSAgICBjMC4yNDItMC4xNCwwLjQ1My0wLjE4OCwwLjYzMy0wLjE4OGMwLjI4LDAsMC40ODIsMC4xMTcsMC42MDUsMC4xODhsMTY0LjUyNiw5NC45OWMwLjIwMSwwLjExNiwwLjYxOCwwLjM1NywwLjYxOCwxLjA3MSAgICBDMzY2LjA3MSwyNTYuNzE2LDM2NS42NTIsMjU2Ljk1OCwzNjUuNDUyLDI1Ny4wNzR6IiBmaWxsPSIjRkZGRkZGIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNDEzLjMwMywxMzQuNDRjLTMxLjY4OS00MC45MzgtNzkuMzI2LTY4LjQ0Mi0xMzAuNjk4LTc1LjQ2MWMtNy4yODMtMC45OTctMTQuMDA5LDQuMTA2LTE1LjAwNiwxMS4zOTkgICAgYy0wLjk5NSw3LjI5MSw0LjEwOCwxNC4wMDksMTEuMzk5LDE1LjAwNmM0NC41MTIsNi4wODEsODUuNzgzLDI5LjkwOSwxMTMuMjMyLDY1LjM2OWMyLjYyNiwzLjM5Miw2LjU2NSw1LjE2OCwxMC41NDYsNS4xNjggICAgYzIuODQ5LDAsNS43Mi0wLjkwOSw4LjE0Ni0yLjc4OUM0MTYuNzQxLDE0OC42MjgsNDE3LjgwNywxNDAuMjU5LDQxMy4zMDMsMTM0LjQ0eiIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />
-                        </a>
+                            <a class=" btn-floating btn-large halfway-fab waves-effect waves-light blue-darken pulse"
+                                href="http://marcoc76.github.io/guacamole/Introduccion.html">
+                                <img src="img/guacamole (2).png" />
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <p>La Física como ciencia</p>
+                        </div>
                     </div>
-                    <div class="card-content">
-                        <p>La Física como ciencia</p>
+                </div>
+
+                <div class="col s12 m4">
+                    <div class="card z-depth-5 hoverable">
+                        <div class="card-image">
+                            <img src="img/descarga.jpg">
+
+                            <a class=" btn-floating btn-large halfway-fab waves-effect waves-light blue-darken pulse"
+                                href="http://marcoc76.github.io/guacamole/metodo.html">
+                                <img src="img/guacamole (2).png" />
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <p>Método científico y medición</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m4">
+                    <div class="card z-depth-5 hoverable">
+                        <div class="card-image">
+                            <img
+                                src="https://static.vecteezy.com/system/resources/previews/000/112/730/original/free-flechas-vector.jpg">
+
+                            <a class=" btn-floating btn-large halfway-fab waves-effect waves-light blue-darken pulse"
+                                href="http://marcoc76.github.io/guacamole/vectores.html">
+                                <img src="img/guacamole (2).png" />
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <p>Vectores</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+
+                <div class="col s12 m4">
+                    <div class="card z-depth-5 hoverable">
+                        <div class="card-image">
+                            <img src="img/ciencias.jpg">
+
+                            <a class=" btn-floating btn-large halfway-fab waves-effect waves-light blue-darken pulse"
+                                href="https://marcoc76.github.io/guacamole/sumaGrafico.html">
+                                <img src="img/guacamole (2).png" />
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <p>Suma por métodos gráficos</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m4">
+                    <div class="card z-depth-5 hoverable">
+                        <div class="card-image">
+                            <img src="https://www.wired.com/wp-content/uploads/2015/08/GettyImages-174715765.jpg">
+
+                            <a class=" btn-floating btn-large halfway-fab waves-effect waves-light blue-darken pulse"
+                                href="https://marcoc76.github.io/guacamole/sumaAnalitico.html">
+                                <img src="img/guacamole (2).png" />
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <p>Suma por métodos analíticos</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section id="Segundo">
+            <h1 class="white-text">Segundo periodo</h1>
+            <hr>
+            <div class="row">
+
+                <div class="col s12 m4">
+                    <div class="card z-depth-5 hoverable">
+                        <div class="card-image">
+                            <img src="img/ptd.jpg">
+
+                            <a class=" btn-floating btn-large halfway-fab waves-effect waves-light blue-darken pulse"
+                                href="https://marcoc76.github.io/guacamole/ptd.html">
+                                <img src="img/guacamole (2).png" />
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <p>Posición, trayectoria y desplazamiento</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m4">
+                    <div class="card z-depth-5 hoverable">
+                        <div class="card-image">
+                            <img src="img/velocidad.png">
+
+                            <a class=" btn-floating btn-large halfway-fab waves-effect waves-light blue-darken pulse"
+                                href="https://marcoc76.github.io/guacamole/rapidezVelocidad.html">
+                                <img src="img/guacamole (2).png" />
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <p>Rapidez y velocidad</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m4">
+                    <div class="card z-depth-5 hoverable">
+                        <div class="card-image">
+                            <img src="img/mru.jpg">
+
+                            <a class=" btn-floating btn-large halfway-fab waves-effect waves-light blue-darken pulse"
+                                href="https://marcoc76.github.io/guacamole/mru.html">
+                                <img src="img/guacamole (2).png" />
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <p>Movimiento Rectilíneo Uniforme</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col s12 m4">
-                <div class="card z-depth-5 hoverable">
-                    <div class="card-image">
-                        <img src="img/descarga.jpg">
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="card z-depth-5 hoverable">
+                        <div class="card-image">
+                            <img src="img/mcu.jpg">
 
-                        <a class=" btn-floating btn-large halfway-fab waves-effect waves-light blue-darken pulse"
-                            href="http://marcoc76.github.io/guacamole/metodo.html">
-                            <img
-                                src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjY0cHgiIGhlaWdodD0iNjRweCI+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTQ3Ny42MDYsMTI4LjA1NUM0NDMuNDMxLDY4Ljg2MywzODguMjUxLDI2LjUyLDMyMi4yMjksOC44M0MyNTYuMjA4LTguODYyLDE4Ny4yNSwwLjIxNywxMjguMDU1LDM0LjM5NCAgICBDNjguODYxLDY4LjU3LDI2LjUyLDEyMy43NSw4LjgzLDE4OS43NzJjLTE3LjY5LDY2LjAyMS04LjYxMSwxMzQuOTgxLDI1LjU2NCwxOTQuMTczICAgIEM2OC41NjgsNDQzLjEzNywxMjMuNzUsNDg1LjQ4LDE4OS43NzEsNTAzLjE3YzIyLjA0Niw1LjkwOCw0NC40MTcsOC44Myw2Ni42NDYsOC44M2M0NC4zMzksMCw4OC4xMDEtMTEuNjI5LDEyNy41MjktMzQuMzkzICAgIGM1OS4xOTItMzQuMTc1LDEwMS41MzUtODkuMzU1LDExOS4yMjUtMTU1LjM3N0M1MjAuODYyLDI1Ni4yMDcsNTExLjc4MSwxODcuMjQ5LDQ3Ny42MDYsMTI4LjA1NXogTTQ3Ny40MjksMzE1LjMzMyAgICBjLTE1Ljg0OCw1OS4xNDYtNTMuNzgsMTA4LjU4MS0xMDYuODEsMTM5LjE5N2MtNTMuMDI4LDMwLjYxNy0xMTQuODA2LDM4Ljc0OS0xNzMuOTUyLDIyLjkwMyAgICBjLTU5LjE0Ny0xNS44NDgtMTA4LjU4MS01My43OC0xMzkuMTk4LTEwNi44MWMtMzAuNjE2LTUzLjAyOC0zOC43NDktMTE0LjgwNy0yMi45LTE3My45NTQgICAgQzUwLjQxOCwxMzcuNTIzLDg4LjM1LDg4LjA5LDE0MS4zNzksNTcuNDcyYzM1LjMyNS0yMC4zOTUsNzQuNTI0LTMwLjgxMiwxMTQuMjQ5LTMwLjgxMmMxOS45MSwwLDM5Ljk1OSwyLjYxOCw1OS43MDIsNy45MDkgICAgYzU5LjE0NiwxNS44NDgsMTA4LjU4MSw1My43OCwxMzkuMTk3LDEwNi44MUM0ODUuMTQ0LDE5NC40MDgsNDkzLjI3OCwyNTYuMTg2LDQ3Ny40MjksMzE1LjMzM3oiIGZpbGw9IiNGRkZGRkYiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik0zNzguNzc4LDIzMS44NTJsLTE2NC41MjYtOTQuOTljLTguNzMxLTUuMDQxLTE5LjE1NS01LjAzOS0yNy44ODYtMC4wMDFjLTguNzMxLDUuMDQtMTMuOTQ0LDE0LjA2OS0xMy45NDQsMjQuMTV2MTg5Ljk4ICAgIGMwLDEwLjA4MSw1LjIxMiwxOS4xMDksMTMuOTQ0LDI0LjE1YzQuMzY1LDIuNTIxLDkuMTUyLDMuNzgsMTMuOTQxLDMuNzhjNC43OSwwLDkuNTc5LTEuMjYyLDEzLjk0NC0zLjc4MWwxNjQuNTI4LTk0Ljk4OSAgICBjOC43My01LjA0MiwxMy45NDEtMTQuMDcsMTMuOTQxLTI0LjE1MUMzOTIuNzIsMjQ1LjkyLDM4Ny41MDgsMjM2Ljg5MiwzNzguNzc4LDIzMS44NTJ6IE0zNjUuNDUyLDI1Ny4wNzRsLTE2NC41MjcsOTQuOTg5ICAgIGMtMC4yMDEsMC4xMTctMC42MiwwLjM1OC0xLjIzNiwwYy0wLjYxOC0wLjM1Ny0wLjYxOC0wLjgzOS0wLjYxOC0xLjA3MXYtMTg5Ljk4YzAtMC4yMzIsMC0wLjcxNCwwLjYxOC0xLjA3MSAgICBjMC4yNDItMC4xNCwwLjQ1My0wLjE4OCwwLjYzMy0wLjE4OGMwLjI4LDAsMC40ODIsMC4xMTcsMC42MDUsMC4xODhsMTY0LjUyNiw5NC45OWMwLjIwMSwwLjExNiwwLjYxOCwwLjM1NywwLjYxOCwxLjA3MSAgICBDMzY2LjA3MSwyNTYuNzE2LDM2NS42NTIsMjU2Ljk1OCwzNjUuNDUyLDI1Ny4wNzR6IiBmaWxsPSIjRkZGRkZGIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNDEzLjMwMywxMzQuNDRjLTMxLjY4OS00MC45MzgtNzkuMzI2LTY4LjQ0Mi0xMzAuNjk4LTc1LjQ2MWMtNy4yODMtMC45OTctMTQuMDA5LDQuMTA2LTE1LjAwNiwxMS4zOTkgICAgYy0wLjk5NSw3LjI5MSw0LjEwOCwxNC4wMDksMTEuMzk5LDE1LjAwNmM0NC41MTIsNi4wODEsODUuNzgzLDI5LjkwOSwxMTMuMjMyLDY1LjM2OWMyLjYyNiwzLjM5Miw2LjU2NSw1LjE2OCwxMC41NDYsNS4xNjggICAgYzIuODQ5LDAsNS43Mi0wLjkwOSw4LjE0Ni0yLjc4OUM0MTYuNzQxLDE0OC42MjgsNDE3LjgwNywxNDAuMjU5LDQxMy4zMDMsMTM0LjQ0eiIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />
-                        </a>
-                    </div>
-                    <div class="card-content">
-                        <p>Método científico y medición</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col s12 m4">
-                <div class="card z-depth-5 hoverable">
-                    <div class="card-image">
-                        <img
-                            src="https://static.vecteezy.com/system/resources/previews/000/112/730/original/free-flechas-vector.jpg">
-
-                        <a class=" btn-floating btn-large halfway-fab waves-effect waves-light blue-darken pulse"
-                            href="http://marcoc76.github.io/guacamole/vectores.html">
-                            <img
-                                src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjY0cHgiIGhlaWdodD0iNjRweCI+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTQ3Ny42MDYsMTI4LjA1NUM0NDMuNDMxLDY4Ljg2MywzODguMjUxLDI2LjUyLDMyMi4yMjksOC44M0MyNTYuMjA4LTguODYyLDE4Ny4yNSwwLjIxNywxMjguMDU1LDM0LjM5NCAgICBDNjguODYxLDY4LjU3LDI2LjUyLDEyMy43NSw4LjgzLDE4OS43NzJjLTE3LjY5LDY2LjAyMS04LjYxMSwxMzQuOTgxLDI1LjU2NCwxOTQuMTczICAgIEM2OC41NjgsNDQzLjEzNywxMjMuNzUsNDg1LjQ4LDE4OS43NzEsNTAzLjE3YzIyLjA0Niw1LjkwOCw0NC40MTcsOC44Myw2Ni42NDYsOC44M2M0NC4zMzksMCw4OC4xMDEtMTEuNjI5LDEyNy41MjktMzQuMzkzICAgIGM1OS4xOTItMzQuMTc1LDEwMS41MzUtODkuMzU1LDExOS4yMjUtMTU1LjM3N0M1MjAuODYyLDI1Ni4yMDcsNTExLjc4MSwxODcuMjQ5LDQ3Ny42MDYsMTI4LjA1NXogTTQ3Ny40MjksMzE1LjMzMyAgICBjLTE1Ljg0OCw1OS4xNDYtNTMuNzgsMTA4LjU4MS0xMDYuODEsMTM5LjE5N2MtNTMuMDI4LDMwLjYxNy0xMTQuODA2LDM4Ljc0OS0xNzMuOTUyLDIyLjkwMyAgICBjLTU5LjE0Ny0xNS44NDgtMTA4LjU4MS01My43OC0xMzkuMTk4LTEwNi44MWMtMzAuNjE2LTUzLjAyOC0zOC43NDktMTE0LjgwNy0yMi45LTE3My45NTQgICAgQzUwLjQxOCwxMzcuNTIzLDg4LjM1LDg4LjA5LDE0MS4zNzksNTcuNDcyYzM1LjMyNS0yMC4zOTUsNzQuNTI0LTMwLjgxMiwxMTQuMjQ5LTMwLjgxMmMxOS45MSwwLDM5Ljk1OSwyLjYxOCw1OS43MDIsNy45MDkgICAgYzU5LjE0NiwxNS44NDgsMTA4LjU4MSw1My43OCwxMzkuMTk3LDEwNi44MUM0ODUuMTQ0LDE5NC40MDgsNDkzLjI3OCwyNTYuMTg2LDQ3Ny40MjksMzE1LjMzM3oiIGZpbGw9IiNGRkZGRkYiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik0zNzguNzc4LDIzMS44NTJsLTE2NC41MjYtOTQuOTljLTguNzMxLTUuMDQxLTE5LjE1NS01LjAzOS0yNy44ODYtMC4wMDFjLTguNzMxLDUuMDQtMTMuOTQ0LDE0LjA2OS0xMy45NDQsMjQuMTV2MTg5Ljk4ICAgIGMwLDEwLjA4MSw1LjIxMiwxOS4xMDksMTMuOTQ0LDI0LjE1YzQuMzY1LDIuNTIxLDkuMTUyLDMuNzgsMTMuOTQxLDMuNzhjNC43OSwwLDkuNTc5LTEuMjYyLDEzLjk0NC0zLjc4MWwxNjQuNTI4LTk0Ljk4OSAgICBjOC43My01LjA0MiwxMy45NDEtMTQuMDcsMTMuOTQxLTI0LjE1MUMzOTIuNzIsMjQ1LjkyLDM4Ny41MDgsMjM2Ljg5MiwzNzguNzc4LDIzMS44NTJ6IE0zNjUuNDUyLDI1Ny4wNzRsLTE2NC41MjcsOTQuOTg5ICAgIGMtMC4yMDEsMC4xMTctMC42MiwwLjM1OC0xLjIzNiwwYy0wLjYxOC0wLjM1Ny0wLjYxOC0wLjgzOS0wLjYxOC0xLjA3MXYtMTg5Ljk4YzAtMC4yMzIsMC0wLjcxNCwwLjYxOC0xLjA3MSAgICBjMC4yNDItMC4xNCwwLjQ1My0wLjE4OCwwLjYzMy0wLjE4OGMwLjI4LDAsMC40ODIsMC4xMTcsMC42MDUsMC4xODhsMTY0LjUyNiw5NC45OWMwLjIwMSwwLjExNiwwLjYxOCwwLjM1NywwLjYxOCwxLjA3MSAgICBDMzY2LjA3MSwyNTYuNzE2LDM2NS42NTIsMjU2Ljk1OCwzNjUuNDUyLDI1Ny4wNzR6IiBmaWxsPSIjRkZGRkZGIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNDEzLjMwMywxMzQuNDRjLTMxLjY4OS00MC45MzgtNzkuMzI2LTY4LjQ0Mi0xMzAuNjk4LTc1LjQ2MWMtNy4yODMtMC45OTctMTQuMDA5LDQuMTA2LTE1LjAwNiwxMS4zOTkgICAgYy0wLjk5NSw3LjI5MSw0LjEwOCwxNC4wMDksMTEuMzk5LDE1LjAwNmM0NC41MTIsNi4wODEsODUuNzgzLDI5LjkwOSwxMTMuMjMyLDY1LjM2OWMyLjYyNiwzLjM5Miw2LjU2NSw1LjE2OCwxMC41NDYsNS4xNjggICAgYzIuODQ5LDAsNS43Mi0wLjkwOSw4LjE0Ni0yLjc4OUM0MTYuNzQxLDE0OC42MjgsNDE3LjgwNywxNDAuMjU5LDQxMy4zMDMsMTM0LjQ0eiIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />
-                        </a>
-                    </div>
-                    <div class="card-content">
-                        <p>Vectores</p>
+                            <a class=" btn-floating btn-large halfway-fab waves-effect waves-light blue-darken pulse"
+                                href="https://marcoc76.github.io/guacamole/mcu.html">
+                                <img src="img/guacamole (2).png" />
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <p>Movimiento Curvilíneo Uniforme</p>
+                        </div>
                     </div>
                 </div>
             </div>
+        </section>
+        <section id="Tercer">
+            <h1 class="white-text">Tercer periodo</h1>
+            <hr>
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="card z-depth-5 hoverable">
+                        <div class="card-image">
+                            <img src="img/fuerza.jpg">
 
-        </div>
-
-        <div class="row">
-
-
-            <div class="col s12 m4">
-                <div class="card z-depth-5 hoverable">
-                    <div class="card-image">
-                        <img src="img/ciencias.jpg">
-
-                        <a class=" btn-floating btn-large halfway-fab waves-effect waves-light blue-darken pulse"
-                            href="https://marcoc76.github.io/guacamole/sumaGrafico.html">
-                            <img
-                                src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjY0cHgiIGhlaWdodD0iNjRweCI+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTQ3Ny42MDYsMTI4LjA1NUM0NDMuNDMxLDY4Ljg2MywzODguMjUxLDI2LjUyLDMyMi4yMjksOC44M0MyNTYuMjA4LTguODYyLDE4Ny4yNSwwLjIxNywxMjguMDU1LDM0LjM5NCAgICBDNjguODYxLDY4LjU3LDI2LjUyLDEyMy43NSw4LjgzLDE4OS43NzJjLTE3LjY5LDY2LjAyMS04LjYxMSwxMzQuOTgxLDI1LjU2NCwxOTQuMTczICAgIEM2OC41NjgsNDQzLjEzNywxMjMuNzUsNDg1LjQ4LDE4OS43NzEsNTAzLjE3YzIyLjA0Niw1LjkwOCw0NC40MTcsOC44Myw2Ni42NDYsOC44M2M0NC4zMzksMCw4OC4xMDEtMTEuNjI5LDEyNy41MjktMzQuMzkzICAgIGM1OS4xOTItMzQuMTc1LDEwMS41MzUtODkuMzU1LDExOS4yMjUtMTU1LjM3N0M1MjAuODYyLDI1Ni4yMDcsNTExLjc4MSwxODcuMjQ5LDQ3Ny42MDYsMTI4LjA1NXogTTQ3Ny40MjksMzE1LjMzMyAgICBjLTE1Ljg0OCw1OS4xNDYtNTMuNzgsMTA4LjU4MS0xMDYuODEsMTM5LjE5N2MtNTMuMDI4LDMwLjYxNy0xMTQuODA2LDM4Ljc0OS0xNzMuOTUyLDIyLjkwMyAgICBjLTU5LjE0Ny0xNS44NDgtMTA4LjU4MS01My43OC0xMzkuMTk4LTEwNi44MWMtMzAuNjE2LTUzLjAyOC0zOC43NDktMTE0LjgwNy0yMi45LTE3My45NTQgICAgQzUwLjQxOCwxMzcuNTIzLDg4LjM1LDg4LjA5LDE0MS4zNzksNTcuNDcyYzM1LjMyNS0yMC4zOTUsNzQuNTI0LTMwLjgxMiwxMTQuMjQ5LTMwLjgxMmMxOS45MSwwLDM5Ljk1OSwyLjYxOCw1OS43MDIsNy45MDkgICAgYzU5LjE0NiwxNS44NDgsMTA4LjU4MSw1My43OCwxMzkuMTk3LDEwNi44MUM0ODUuMTQ0LDE5NC40MDgsNDkzLjI3OCwyNTYuMTg2LDQ3Ny40MjksMzE1LjMzM3oiIGZpbGw9IiNGRkZGRkYiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik0zNzguNzc4LDIzMS44NTJsLTE2NC41MjYtOTQuOTljLTguNzMxLTUuMDQxLTE5LjE1NS01LjAzOS0yNy44ODYtMC4wMDFjLTguNzMxLDUuMDQtMTMuOTQ0LDE0LjA2OS0xMy45NDQsMjQuMTV2MTg5Ljk4ICAgIGMwLDEwLjA4MSw1LjIxMiwxOS4xMDksMTMuOTQ0LDI0LjE1YzQuMzY1LDIuNTIxLDkuMTUyLDMuNzgsMTMuOTQxLDMuNzhjNC43OSwwLDkuNTc5LTEuMjYyLDEzLjk0NC0zLjc4MWwxNjQuNTI4LTk0Ljk4OSAgICBjOC43My01LjA0MiwxMy45NDEtMTQuMDcsMTMuOTQxLTI0LjE1MUMzOTIuNzIsMjQ1LjkyLDM4Ny41MDgsMjM2Ljg5MiwzNzguNzc4LDIzMS44NTJ6IE0zNjUuNDUyLDI1Ny4wNzRsLTE2NC41MjcsOTQuOTg5ICAgIGMtMC4yMDEsMC4xMTctMC42MiwwLjM1OC0xLjIzNiwwYy0wLjYxOC0wLjM1Ny0wLjYxOC0wLjgzOS0wLjYxOC0xLjA3MXYtMTg5Ljk4YzAtMC4yMzIsMC0wLjcxNCwwLjYxOC0xLjA3MSAgICBjMC4yNDItMC4xNCwwLjQ1My0wLjE4OCwwLjYzMy0wLjE4OGMwLjI4LDAsMC40ODIsMC4xMTcsMC42MDUsMC4xODhsMTY0LjUyNiw5NC45OWMwLjIwMSwwLjExNiwwLjYxOCwwLjM1NywwLjYxOCwxLjA3MSAgICBDMzY2LjA3MSwyNTYuNzE2LDM2NS42NTIsMjU2Ljk1OCwzNjUuNDUyLDI1Ny4wNzR6IiBmaWxsPSIjRkZGRkZGIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNDEzLjMwMywxMzQuNDRjLTMxLjY4OS00MC45MzgtNzkuMzI2LTY4LjQ0Mi0xMzAuNjk4LTc1LjQ2MWMtNy4yODMtMC45OTctMTQuMDA5LDQuMTA2LTE1LjAwNiwxMS4zOTkgICAgYy0wLjk5NSw3LjI5MSw0LjEwOCwxNC4wMDksMTEuMzk5LDE1LjAwNmM0NC41MTIsNi4wODEsODUuNzgzLDI5LjkwOSwxMTMuMjMyLDY1LjM2OWMyLjYyNiwzLjM5Miw2LjU2NSw1LjE2OCwxMC41NDYsNS4xNjggICAgYzIuODQ5LDAsNS43Mi0wLjkwOSw4LjE0Ni0yLjc4OUM0MTYuNzQxLDE0OC42MjgsNDE3LjgwNywxNDAuMjU5LDQxMy4zMDMsMTM0LjQ0eiIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />
-                        </a>
-                    </div>
-                    <div class="card-content">
-                        <p>Suma por métodos gráficos</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col s12 m4">
-                <div class="card z-depth-5 hoverable">
-                    <div class="card-image">
-                        <img src="https://www.wired.com/wp-content/uploads/2015/08/GettyImages-174715765.jpg">
-
-                        <a class=" btn-floating btn-large halfway-fab waves-effect waves-light blue-darken pulse"
-                            href="https://marcoc76.github.io/guacamole/sumaAnalitico.html">
-                            <img
-                                src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjY0cHgiIGhlaWdodD0iNjRweCI+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTQ3Ny42MDYsMTI4LjA1NUM0NDMuNDMxLDY4Ljg2MywzODguMjUxLDI2LjUyLDMyMi4yMjksOC44M0MyNTYuMjA4LTguODYyLDE4Ny4yNSwwLjIxNywxMjguMDU1LDM0LjM5NCAgICBDNjguODYxLDY4LjU3LDI2LjUyLDEyMy43NSw4LjgzLDE4OS43NzJjLTE3LjY5LDY2LjAyMS04LjYxMSwxMzQuOTgxLDI1LjU2NCwxOTQuMTczICAgIEM2OC41NjgsNDQzLjEzNywxMjMuNzUsNDg1LjQ4LDE4OS43NzEsNTAzLjE3YzIyLjA0Niw1LjkwOCw0NC40MTcsOC44Myw2Ni42NDYsOC44M2M0NC4zMzksMCw4OC4xMDEtMTEuNjI5LDEyNy41MjktMzQuMzkzICAgIGM1OS4xOTItMzQuMTc1LDEwMS41MzUtODkuMzU1LDExOS4yMjUtMTU1LjM3N0M1MjAuODYyLDI1Ni4yMDcsNTExLjc4MSwxODcuMjQ5LDQ3Ny42MDYsMTI4LjA1NXogTTQ3Ny40MjksMzE1LjMzMyAgICBjLTE1Ljg0OCw1OS4xNDYtNTMuNzgsMTA4LjU4MS0xMDYuODEsMTM5LjE5N2MtNTMuMDI4LDMwLjYxNy0xMTQuODA2LDM4Ljc0OS0xNzMuOTUyLDIyLjkwMyAgICBjLTU5LjE0Ny0xNS44NDgtMTA4LjU4MS01My43OC0xMzkuMTk4LTEwNi44MWMtMzAuNjE2LTUzLjAyOC0zOC43NDktMTE0LjgwNy0yMi45LTE3My45NTQgICAgQzUwLjQxOCwxMzcuNTIzLDg4LjM1LDg4LjA5LDE0MS4zNzksNTcuNDcyYzM1LjMyNS0yMC4zOTUsNzQuNTI0LTMwLjgxMiwxMTQuMjQ5LTMwLjgxMmMxOS45MSwwLDM5Ljk1OSwyLjYxOCw1OS43MDIsNy45MDkgICAgYzU5LjE0NiwxNS44NDgsMTA4LjU4MSw1My43OCwxMzkuMTk3LDEwNi44MUM0ODUuMTQ0LDE5NC40MDgsNDkzLjI3OCwyNTYuMTg2LDQ3Ny40MjksMzE1LjMzM3oiIGZpbGw9IiNGRkZGRkYiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik0zNzguNzc4LDIzMS44NTJsLTE2NC41MjYtOTQuOTljLTguNzMxLTUuMDQxLTE5LjE1NS01LjAzOS0yNy44ODYtMC4wMDFjLTguNzMxLDUuMDQtMTMuOTQ0LDE0LjA2OS0xMy45NDQsMjQuMTV2MTg5Ljk4ICAgIGMwLDEwLjA4MSw1LjIxMiwxOS4xMDksMTMuOTQ0LDI0LjE1YzQuMzY1LDIuNTIxLDkuMTUyLDMuNzgsMTMuOTQxLDMuNzhjNC43OSwwLDkuNTc5LTEuMjYyLDEzLjk0NC0zLjc4MWwxNjQuNTI4LTk0Ljk4OSAgICBjOC43My01LjA0MiwxMy45NDEtMTQuMDcsMTMuOTQxLTI0LjE1MUMzOTIuNzIsMjQ1LjkyLDM4Ny41MDgsMjM2Ljg5MiwzNzguNzc4LDIzMS44NTJ6IE0zNjUuNDUyLDI1Ny4wNzRsLTE2NC41MjcsOTQuOTg5ICAgIGMtMC4yMDEsMC4xMTctMC42MiwwLjM1OC0xLjIzNiwwYy0wLjYxOC0wLjM1Ny0wLjYxOC0wLjgzOS0wLjYxOC0xLjA3MXYtMTg5Ljk4YzAtMC4yMzIsMC0wLjcxNCwwLjYxOC0xLjA3MSAgICBjMC4yNDItMC4xNCwwLjQ1My0wLjE4OCwwLjYzMy0wLjE4OGMwLjI4LDAsMC40ODIsMC4xMTcsMC42MDUsMC4xODhsMTY0LjUyNiw5NC45OWMwLjIwMSwwLjExNiwwLjYxOCwwLjM1NywwLjYxOCwxLjA3MSAgICBDMzY2LjA3MSwyNTYuNzE2LDM2NS42NTIsMjU2Ljk1OCwzNjUuNDUyLDI1Ny4wNzR6IiBmaWxsPSIjRkZGRkZGIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNDEzLjMwMywxMzQuNDRjLTMxLjY4OS00MC45MzgtNzkuMzI2LTY4LjQ0Mi0xMzAuNjk4LTc1LjQ2MWMtNy4yODMtMC45OTctMTQuMDA5LDQuMTA2LTE1LjAwNiwxMS4zOTkgICAgYy0wLjk5NSw3LjI5MSw0LjEwOCwxNC4wMDksMTEuMzk5LDE1LjAwNmM0NC41MTIsNi4wODEsODUuNzgzLDI5LjkwOSwxMTMuMjMyLDY1LjM2OWMyLjYyNiwzLjM5Miw2LjU2NSw1LjE2OCwxMC41NDYsNS4xNjggICAgYzIuODQ5LDAsNS43Mi0wLjkwOSw4LjE0Ni0yLjc4OUM0MTYuNzQxLDE0OC42MjgsNDE3LjgwNywxNDAuMjU5LDQxMy4zMDMsMTM0LjQ0eiIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />
-                        </a>
-                    </div>
-                    <div class="card-content">
-                        <p>Suma por métodos analíticos</p>
+                            <a class=" btn-floating btn-large halfway-fab waves-effect waves-light blue-darken pulse"
+                                href="https://marcoc76.github.io/guacamole/fuerza.html">
+                                <img src="img/guacamole (2).png" />
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <p>Fuerza</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-        </div>
-        <h1 class="black-text">Segundo periodo</h1>
-        <hr>
-        <div class="row">
-
-            <div class="col s12 m4">
-                <div class="card z-depth-5 hoverable">
-                    <div class="card-image">
-                        <img src="img/ptd.jpg">
-
-                        <a class=" btn-floating btn-large halfway-fab waves-effect waves-light blue-darken pulse"
-                            href="https://marcoc76.github.io/guacamole/ptd.html">
-                            <img
-                                src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjY0cHgiIGhlaWdodD0iNjRweCI+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTQ3Ny42MDYsMTI4LjA1NUM0NDMuNDMxLDY4Ljg2MywzODguMjUxLDI2LjUyLDMyMi4yMjksOC44M0MyNTYuMjA4LTguODYyLDE4Ny4yNSwwLjIxNywxMjguMDU1LDM0LjM5NCAgICBDNjguODYxLDY4LjU3LDI2LjUyLDEyMy43NSw4LjgzLDE4OS43NzJjLTE3LjY5LDY2LjAyMS04LjYxMSwxMzQuOTgxLDI1LjU2NCwxOTQuMTczICAgIEM2OC41NjgsNDQzLjEzNywxMjMuNzUsNDg1LjQ4LDE4OS43NzEsNTAzLjE3YzIyLjA0Niw1LjkwOCw0NC40MTcsOC44Myw2Ni42NDYsOC44M2M0NC4zMzksMCw4OC4xMDEtMTEuNjI5LDEyNy41MjktMzQuMzkzICAgIGM1OS4xOTItMzQuMTc1LDEwMS41MzUtODkuMzU1LDExOS4yMjUtMTU1LjM3N0M1MjAuODYyLDI1Ni4yMDcsNTExLjc4MSwxODcuMjQ5LDQ3Ny42MDYsMTI4LjA1NXogTTQ3Ny40MjksMzE1LjMzMyAgICBjLTE1Ljg0OCw1OS4xNDYtNTMuNzgsMTA4LjU4MS0xMDYuODEsMTM5LjE5N2MtNTMuMDI4LDMwLjYxNy0xMTQuODA2LDM4Ljc0OS0xNzMuOTUyLDIyLjkwMyAgICBjLTU5LjE0Ny0xNS44NDgtMTA4LjU4MS01My43OC0xMzkuMTk4LTEwNi44MWMtMzAuNjE2LTUzLjAyOC0zOC43NDktMTE0LjgwNy0yMi45LTE3My45NTQgICAgQzUwLjQxOCwxMzcuNTIzLDg4LjM1LDg4LjA5LDE0MS4zNzksNTcuNDcyYzM1LjMyNS0yMC4zOTUsNzQuNTI0LTMwLjgxMiwxMTQuMjQ5LTMwLjgxMmMxOS45MSwwLDM5Ljk1OSwyLjYxOCw1OS43MDIsNy45MDkgICAgYzU5LjE0NiwxNS44NDgsMTA4LjU4MSw1My43OCwxMzkuMTk3LDEwNi44MUM0ODUuMTQ0LDE5NC40MDgsNDkzLjI3OCwyNTYuMTg2LDQ3Ny40MjksMzE1LjMzM3oiIGZpbGw9IiNGRkZGRkYiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik0zNzguNzc4LDIzMS44NTJsLTE2NC41MjYtOTQuOTljLTguNzMxLTUuMDQxLTE5LjE1NS01LjAzOS0yNy44ODYtMC4wMDFjLTguNzMxLDUuMDQtMTMuOTQ0LDE0LjA2OS0xMy45NDQsMjQuMTV2MTg5Ljk4ICAgIGMwLDEwLjA4MSw1LjIxMiwxOS4xMDksMTMuOTQ0LDI0LjE1YzQuMzY1LDIuNTIxLDkuMTUyLDMuNzgsMTMuOTQxLDMuNzhjNC43OSwwLDkuNTc5LTEuMjYyLDEzLjk0NC0zLjc4MWwxNjQuNTI4LTk0Ljk4OSAgICBjOC43My01LjA0MiwxMy45NDEtMTQuMDcsMTMuOTQxLTI0LjE1MUMzOTIuNzIsMjQ1LjkyLDM4Ny41MDgsMjM2Ljg5MiwzNzguNzc4LDIzMS44NTJ6IE0zNjUuNDUyLDI1Ny4wNzRsLTE2NC41MjcsOTQuOTg5ICAgIGMtMC4yMDEsMC4xMTctMC42MiwwLjM1OC0xLjIzNiwwYy0wLjYxOC0wLjM1Ny0wLjYxOC0wLjgzOS0wLjYxOC0xLjA3MXYtMTg5Ljk4YzAtMC4yMzIsMC0wLjcxNCwwLjYxOC0xLjA3MSAgICBjMC4yNDItMC4xNCwwLjQ1My0wLjE4OCwwLjYzMy0wLjE4OGMwLjI4LDAsMC40ODIsMC4xMTcsMC42MDUsMC4xODhsMTY0LjUyNiw5NC45OWMwLjIwMSwwLjExNiwwLjYxOCwwLjM1NywwLjYxOCwxLjA3MSAgICBDMzY2LjA3MSwyNTYuNzE2LDM2NS42NTIsMjU2Ljk1OCwzNjUuNDUyLDI1Ny4wNzR6IiBmaWxsPSIjRkZGRkZGIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNDEzLjMwMywxMzQuNDRjLTMxLjY4OS00MC45MzgtNzkuMzI2LTY4LjQ0Mi0xMzAuNjk4LTc1LjQ2MWMtNy4yODMtMC45OTctMTQuMDA5LDQuMTA2LTE1LjAwNiwxMS4zOTkgICAgYy0wLjk5NSw3LjI5MSw0LjEwOCwxNC4wMDksMTEuMzk5LDE1LjAwNmM0NC41MTIsNi4wODEsODUuNzgzLDI5LjkwOSwxMTMuMjMyLDY1LjM2OWMyLjYyNiwzLjM5Miw2LjU2NSw1LjE2OCwxMC41NDYsNS4xNjggICAgYzIuODQ5LDAsNS43Mi0wLjkwOSw4LjE0Ni0yLjc4OUM0MTYuNzQxLDE0OC42MjgsNDE3LjgwNywxNDAuMjU5LDQxMy4zMDMsMTM0LjQ0eiIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />
-                        </a>
-                    </div>
-                    <div class="card-content">
-                        <p>Posición, trayectoria y desplazamiento</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col s12 m4">
-                <div class="card z-depth-5 hoverable">
-                    <div class="card-image">
-                        <img src="img/velocidad.png">
-
-                        <a class=" btn-floating btn-large halfway-fab waves-effect waves-light blue-darken pulse"
-                            href="https://marcoc76.github.io/guacamole/rapidezVelocidad.html">
-                            <img
-                                src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjY0cHgiIGhlaWdodD0iNjRweCI+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTQ3Ny42MDYsMTI4LjA1NUM0NDMuNDMxLDY4Ljg2MywzODguMjUxLDI2LjUyLDMyMi4yMjksOC44M0MyNTYuMjA4LTguODYyLDE4Ny4yNSwwLjIxNywxMjguMDU1LDM0LjM5NCAgICBDNjguODYxLDY4LjU3LDI2LjUyLDEyMy43NSw4LjgzLDE4OS43NzJjLTE3LjY5LDY2LjAyMS04LjYxMSwxMzQuOTgxLDI1LjU2NCwxOTQuMTczICAgIEM2OC41NjgsNDQzLjEzNywxMjMuNzUsNDg1LjQ4LDE4OS43NzEsNTAzLjE3YzIyLjA0Niw1LjkwOCw0NC40MTcsOC44Myw2Ni42NDYsOC44M2M0NC4zMzksMCw4OC4xMDEtMTEuNjI5LDEyNy41MjktMzQuMzkzICAgIGM1OS4xOTItMzQuMTc1LDEwMS41MzUtODkuMzU1LDExOS4yMjUtMTU1LjM3N0M1MjAuODYyLDI1Ni4yMDcsNTExLjc4MSwxODcuMjQ5LDQ3Ny42MDYsMTI4LjA1NXogTTQ3Ny40MjksMzE1LjMzMyAgICBjLTE1Ljg0OCw1OS4xNDYtNTMuNzgsMTA4LjU4MS0xMDYuODEsMTM5LjE5N2MtNTMuMDI4LDMwLjYxNy0xMTQuODA2LDM4Ljc0OS0xNzMuOTUyLDIyLjkwMyAgICBjLTU5LjE0Ny0xNS44NDgtMTA4LjU4MS01My43OC0xMzkuMTk4LTEwNi44MWMtMzAuNjE2LTUzLjAyOC0zOC43NDktMTE0LjgwNy0yMi45LTE3My45NTQgICAgQzUwLjQxOCwxMzcuNTIzLDg4LjM1LDg4LjA5LDE0MS4zNzksNTcuNDcyYzM1LjMyNS0yMC4zOTUsNzQuNTI0LTMwLjgxMiwxMTQuMjQ5LTMwLjgxMmMxOS45MSwwLDM5Ljk1OSwyLjYxOCw1OS43MDIsNy45MDkgICAgYzU5LjE0NiwxNS44NDgsMTA4LjU4MSw1My43OCwxMzkuMTk3LDEwNi44MUM0ODUuMTQ0LDE5NC40MDgsNDkzLjI3OCwyNTYuMTg2LDQ3Ny40MjksMzE1LjMzM3oiIGZpbGw9IiNGRkZGRkYiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik0zNzguNzc4LDIzMS44NTJsLTE2NC41MjYtOTQuOTljLTguNzMxLTUuMDQxLTE5LjE1NS01LjAzOS0yNy44ODYtMC4wMDFjLTguNzMxLDUuMDQtMTMuOTQ0LDE0LjA2OS0xMy45NDQsMjQuMTV2MTg5Ljk4ICAgIGMwLDEwLjA4MSw1LjIxMiwxOS4xMDksMTMuOTQ0LDI0LjE1YzQuMzY1LDIuNTIxLDkuMTUyLDMuNzgsMTMuOTQxLDMuNzhjNC43OSwwLDkuNTc5LTEuMjYyLDEzLjk0NC0zLjc4MWwxNjQuNTI4LTk0Ljk4OSAgICBjOC43My01LjA0MiwxMy45NDEtMTQuMDcsMTMuOTQxLTI0LjE1MUMzOTIuNzIsMjQ1LjkyLDM4Ny41MDgsMjM2Ljg5MiwzNzguNzc4LDIzMS44NTJ6IE0zNjUuNDUyLDI1Ny4wNzRsLTE2NC41MjcsOTQuOTg5ICAgIGMtMC4yMDEsMC4xMTctMC42MiwwLjM1OC0xLjIzNiwwYy0wLjYxOC0wLjM1Ny0wLjYxOC0wLjgzOS0wLjYxOC0xLjA3MXYtMTg5Ljk4YzAtMC4yMzIsMC0wLjcxNCwwLjYxOC0xLjA3MSAgICBjMC4yNDItMC4xNCwwLjQ1My0wLjE4OCwwLjYzMy0wLjE4OGMwLjI4LDAsMC40ODIsMC4xMTcsMC42MDUsMC4xODhsMTY0LjUyNiw5NC45OWMwLjIwMSwwLjExNiwwLjYxOCwwLjM1NywwLjYxOCwxLjA3MSAgICBDMzY2LjA3MSwyNTYuNzE2LDM2NS42NTIsMjU2Ljk1OCwzNjUuNDUyLDI1Ny4wNzR6IiBmaWxsPSIjRkZGRkZGIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNDEzLjMwMywxMzQuNDRjLTMxLjY4OS00MC45MzgtNzkuMzI2LTY4LjQ0Mi0xMzAuNjk4LTc1LjQ2MWMtNy4yODMtMC45OTctMTQuMDA5LDQuMTA2LTE1LjAwNiwxMS4zOTkgICAgYy0wLjk5NSw3LjI5MSw0LjEwOCwxNC4wMDksMTEuMzk5LDE1LjAwNmM0NC41MTIsNi4wODEsODUuNzgzLDI5LjkwOSwxMTMuMjMyLDY1LjM2OWMyLjYyNiwzLjM5Miw2LjU2NSw1LjE2OCwxMC41NDYsNS4xNjggICAgYzIuODQ5LDAsNS43Mi0wLjkwOSw4LjE0Ni0yLjc4OUM0MTYuNzQxLDE0OC42MjgsNDE3LjgwNywxNDAuMjU5LDQxMy4zMDMsMTM0LjQ0eiIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />
-                        </a>
-                    </div>
-                    <div class="card-content">
-                        <p>Rapidez y velocidad</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col s12 m4">
-                <div class="card z-depth-5 hoverable">
-                    <div class="card-image">
-                        <img src="img/mru.jpg">
-
-                        <a class=" btn-floating btn-large halfway-fab waves-effect waves-light blue-darken pulse"
-                            href="https://marcoc76.github.io/guacamole/mru.html">
-                            <img
-                                src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjY0cHgiIGhlaWdodD0iNjRweCI+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTQ3Ny42MDYsMTI4LjA1NUM0NDMuNDMxLDY4Ljg2MywzODguMjUxLDI2LjUyLDMyMi4yMjksOC44M0MyNTYuMjA4LTguODYyLDE4Ny4yNSwwLjIxNywxMjguMDU1LDM0LjM5NCAgICBDNjguODYxLDY4LjU3LDI2LjUyLDEyMy43NSw4LjgzLDE4OS43NzJjLTE3LjY5LDY2LjAyMS04LjYxMSwxMzQuOTgxLDI1LjU2NCwxOTQuMTczICAgIEM2OC41NjgsNDQzLjEzNywxMjMuNzUsNDg1LjQ4LDE4OS43NzEsNTAzLjE3YzIyLjA0Niw1LjkwOCw0NC40MTcsOC44Myw2Ni42NDYsOC44M2M0NC4zMzksMCw4OC4xMDEtMTEuNjI5LDEyNy41MjktMzQuMzkzICAgIGM1OS4xOTItMzQuMTc1LDEwMS41MzUtODkuMzU1LDExOS4yMjUtMTU1LjM3N0M1MjAuODYyLDI1Ni4yMDcsNTExLjc4MSwxODcuMjQ5LDQ3Ny42MDYsMTI4LjA1NXogTTQ3Ny40MjksMzE1LjMzMyAgICBjLTE1Ljg0OCw1OS4xNDYtNTMuNzgsMTA4LjU4MS0xMDYuODEsMTM5LjE5N2MtNTMuMDI4LDMwLjYxNy0xMTQuODA2LDM4Ljc0OS0xNzMuOTUyLDIyLjkwMyAgICBjLTU5LjE0Ny0xNS44NDgtMTA4LjU4MS01My43OC0xMzkuMTk4LTEwNi44MWMtMzAuNjE2LTUzLjAyOC0zOC43NDktMTE0LjgwNy0yMi45LTE3My45NTQgICAgQzUwLjQxOCwxMzcuNTIzLDg4LjM1LDg4LjA5LDE0MS4zNzksNTcuNDcyYzM1LjMyNS0yMC4zOTUsNzQuNTI0LTMwLjgxMiwxMTQuMjQ5LTMwLjgxMmMxOS45MSwwLDM5Ljk1OSwyLjYxOCw1OS43MDIsNy45MDkgICAgYzU5LjE0NiwxNS44NDgsMTA4LjU4MSw1My43OCwxMzkuMTk3LDEwNi44MUM0ODUuMTQ0LDE5NC40MDgsNDkzLjI3OCwyNTYuMTg2LDQ3Ny40MjksMzE1LjMzM3oiIGZpbGw9IiNGRkZGRkYiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik0zNzguNzc4LDIzMS44NTJsLTE2NC41MjYtOTQuOTljLTguNzMxLTUuMDQxLTE5LjE1NS01LjAzOS0yNy44ODYtMC4wMDFjLTguNzMxLDUuMDQtMTMuOTQ0LDE0LjA2OS0xMy45NDQsMjQuMTV2MTg5Ljk4ICAgIGMwLDEwLjA4MSw1LjIxMiwxOS4xMDksMTMuOTQ0LDI0LjE1YzQuMzY1LDIuNTIxLDkuMTUyLDMuNzgsMTMuOTQxLDMuNzhjNC43OSwwLDkuNTc5LTEuMjYyLDEzLjk0NC0zLjc4MWwxNjQuNTI4LTk0Ljk4OSAgICBjOC43My01LjA0MiwxMy45NDEtMTQuMDcsMTMuOTQxLTI0LjE1MUMzOTIuNzIsMjQ1LjkyLDM4Ny41MDgsMjM2Ljg5MiwzNzguNzc4LDIzMS44NTJ6IE0zNjUuNDUyLDI1Ny4wNzRsLTE2NC41MjcsOTQuOTg5ICAgIGMtMC4yMDEsMC4xMTctMC42MiwwLjM1OC0xLjIzNiwwYy0wLjYxOC0wLjM1Ny0wLjYxOC0wLjgzOS0wLjYxOC0xLjA3MXYtMTg5Ljk4YzAtMC4yMzIsMC0wLjcxNCwwLjYxOC0xLjA3MSAgICBjMC4yNDItMC4xNCwwLjQ1My0wLjE4OCwwLjYzMy0wLjE4OGMwLjI4LDAsMC40ODIsMC4xMTcsMC42MDUsMC4xODhsMTY0LjUyNiw5NC45OWMwLjIwMSwwLjExNiwwLjYxOCwwLjM1NywwLjYxOCwxLjA3MSAgICBDMzY2LjA3MSwyNTYuNzE2LDM2NS42NTIsMjU2Ljk1OCwzNjUuNDUyLDI1Ny4wNzR6IiBmaWxsPSIjRkZGRkZGIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNDEzLjMwMywxMzQuNDRjLTMxLjY4OS00MC45MzgtNzkuMzI2LTY4LjQ0Mi0xMzAuNjk4LTc1LjQ2MWMtNy4yODMtMC45OTctMTQuMDA5LDQuMTA2LTE1LjAwNiwxMS4zOTkgICAgYy0wLjk5NSw3LjI5MSw0LjEwOCwxNC4wMDksMTEuMzk5LDE1LjAwNmM0NC41MTIsNi4wODEsODUuNzgzLDI5LjkwOSwxMTMuMjMyLDY1LjM2OWMyLjYyNiwzLjM5Miw2LjU2NSw1LjE2OCwxMC41NDYsNS4xNjggICAgYzIuODQ5LDAsNS43Mi0wLjkwOSw4LjE0Ni0yLjc4OUM0MTYuNzQxLDE0OC42MjgsNDE3LjgwNywxNDAuMjU5LDQxMy4zMDMsMTM0LjQ0eiIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />
-                        </a>
-                    </div>
-                    <div class="card-content">
-                        <p>Movimiento Rectilíneo Uniforme</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col s12 m4">
-                <div class="card z-depth-5 hoverable">
-                    <div class="card-image">
-                        <img src="img/mcu.jpg">
-
-                        <a class=" btn-floating btn-large halfway-fab waves-effect waves-light blue-darken pulse"
-                            href="https://marcoc76.github.io/guacamole/mcu.html">
-                            <img
-                                src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjY0cHgiIGhlaWdodD0iNjRweCI+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTQ3Ny42MDYsMTI4LjA1NUM0NDMuNDMxLDY4Ljg2MywzODguMjUxLDI2LjUyLDMyMi4yMjksOC44M0MyNTYuMjA4LTguODYyLDE4Ny4yNSwwLjIxNywxMjguMDU1LDM0LjM5NCAgICBDNjguODYxLDY4LjU3LDI2LjUyLDEyMy43NSw4LjgzLDE4OS43NzJjLTE3LjY5LDY2LjAyMS04LjYxMSwxMzQuOTgxLDI1LjU2NCwxOTQuMTczICAgIEM2OC41NjgsNDQzLjEzNywxMjMuNzUsNDg1LjQ4LDE4OS43NzEsNTAzLjE3YzIyLjA0Niw1LjkwOCw0NC40MTcsOC44Myw2Ni42NDYsOC44M2M0NC4zMzksMCw4OC4xMDEtMTEuNjI5LDEyNy41MjktMzQuMzkzICAgIGM1OS4xOTItMzQuMTc1LDEwMS41MzUtODkuMzU1LDExOS4yMjUtMTU1LjM3N0M1MjAuODYyLDI1Ni4yMDcsNTExLjc4MSwxODcuMjQ5LDQ3Ny42MDYsMTI4LjA1NXogTTQ3Ny40MjksMzE1LjMzMyAgICBjLTE1Ljg0OCw1OS4xNDYtNTMuNzgsMTA4LjU4MS0xMDYuODEsMTM5LjE5N2MtNTMuMDI4LDMwLjYxNy0xMTQuODA2LDM4Ljc0OS0xNzMuOTUyLDIyLjkwMyAgICBjLTU5LjE0Ny0xNS44NDgtMTA4LjU4MS01My43OC0xMzkuMTk4LTEwNi44MWMtMzAuNjE2LTUzLjAyOC0zOC43NDktMTE0LjgwNy0yMi45LTE3My45NTQgICAgQzUwLjQxOCwxMzcuNTIzLDg4LjM1LDg4LjA5LDE0MS4zNzksNTcuNDcyYzM1LjMyNS0yMC4zOTUsNzQuNTI0LTMwLjgxMiwxMTQuMjQ5LTMwLjgxMmMxOS45MSwwLDM5Ljk1OSwyLjYxOCw1OS43MDIsNy45MDkgICAgYzU5LjE0NiwxNS44NDgsMTA4LjU4MSw1My43OCwxMzkuMTk3LDEwNi44MUM0ODUuMTQ0LDE5NC40MDgsNDkzLjI3OCwyNTYuMTg2LDQ3Ny40MjksMzE1LjMzM3oiIGZpbGw9IiNGRkZGRkYiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik0zNzguNzc4LDIzMS44NTJsLTE2NC41MjYtOTQuOTljLTguNzMxLTUuMDQxLTE5LjE1NS01LjAzOS0yNy44ODYtMC4wMDFjLTguNzMxLDUuMDQtMTMuOTQ0LDE0LjA2OS0xMy45NDQsMjQuMTV2MTg5Ljk4ICAgIGMwLDEwLjA4MSw1LjIxMiwxOS4xMDksMTMuOTQ0LDI0LjE1YzQuMzY1LDIuNTIxLDkuMTUyLDMuNzgsMTMuOTQxLDMuNzhjNC43OSwwLDkuNTc5LTEuMjYyLDEzLjk0NC0zLjc4MWwxNjQuNTI4LTk0Ljk4OSAgICBjOC43My01LjA0MiwxMy45NDEtMTQuMDcsMTMuOTQxLTI0LjE1MUMzOTIuNzIsMjQ1LjkyLDM4Ny41MDgsMjM2Ljg5MiwzNzguNzc4LDIzMS44NTJ6IE0zNjUuNDUyLDI1Ny4wNzRsLTE2NC41MjcsOTQuOTg5ICAgIGMtMC4yMDEsMC4xMTctMC42MiwwLjM1OC0xLjIzNiwwYy0wLjYxOC0wLjM1Ny0wLjYxOC0wLjgzOS0wLjYxOC0xLjA3MXYtMTg5Ljk4YzAtMC4yMzIsMC0wLjcxNCwwLjYxOC0xLjA3MSAgICBjMC4yNDItMC4xNCwwLjQ1My0wLjE4OCwwLjYzMy0wLjE4OGMwLjI4LDAsMC40ODIsMC4xMTcsMC42MDUsMC4xODhsMTY0LjUyNiw5NC45OWMwLjIwMSwwLjExNiwwLjYxOCwwLjM1NywwLjYxOCwxLjA3MSAgICBDMzY2LjA3MSwyNTYuNzE2LDM2NS42NTIsMjU2Ljk1OCwzNjUuNDUyLDI1Ny4wNzR6IiBmaWxsPSIjRkZGRkZGIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNDEzLjMwMywxMzQuNDRjLTMxLjY4OS00MC45MzgtNzkuMzI2LTY4LjQ0Mi0xMzAuNjk4LTc1LjQ2MWMtNy4yODMtMC45OTctMTQuMDA5LDQuMTA2LTE1LjAwNiwxMS4zOTkgICAgYy0wLjk5NSw3LjI5MSw0LjEwOCwxNC4wMDksMTEuMzk5LDE1LjAwNmM0NC41MTIsNi4wODEsODUuNzgzLDI5LjkwOSwxMTMuMjMyLDY1LjM2OWMyLjYyNiwzLjM5Miw2LjU2NSw1LjE2OCwxMC41NDYsNS4xNjggICAgYzIuODQ5LDAsNS43Mi0wLjkwOSw4LjE0Ni0yLjc4OUM0MTYuNzQxLDE0OC42MjgsNDE3LjgwNywxNDAuMjU5LDQxMy4zMDMsMTM0LjQ0eiIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />
-                        </a>
-                    </div>
-                    <div class="card-content">
-                        <p>Movimiento Curvilíneo Uniforme</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <h1 class="black-text">Tercer periodo</h1>
-        <hr>
-        <div class="row">
-            <div class="col s12 m4">
-                <div class="card z-depth-5 hoverable">
-                    <div class="card-image">
-                        <img src="img/fuerza.jpg">
-
-                        <a class=" btn-floating btn-large halfway-fab waves-effect waves-light blue-darken pulse"
-                            href="https://marcoc76.github.io/guacamole/fuerza.html">
-                            <img
-                                src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjY0cHgiIGhlaWdodD0iNjRweCI+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTQ3Ny42MDYsMTI4LjA1NUM0NDMuNDMxLDY4Ljg2MywzODguMjUxLDI2LjUyLDMyMi4yMjksOC44M0MyNTYuMjA4LTguODYyLDE4Ny4yNSwwLjIxNywxMjguMDU1LDM0LjM5NCAgICBDNjguODYxLDY4LjU3LDI2LjUyLDEyMy43NSw4LjgzLDE4OS43NzJjLTE3LjY5LDY2LjAyMS04LjYxMSwxMzQuOTgxLDI1LjU2NCwxOTQuMTczICAgIEM2OC41NjgsNDQzLjEzNywxMjMuNzUsNDg1LjQ4LDE4OS43NzEsNTAzLjE3YzIyLjA0Niw1LjkwOCw0NC40MTcsOC44Myw2Ni42NDYsOC44M2M0NC4zMzksMCw4OC4xMDEtMTEuNjI5LDEyNy41MjktMzQuMzkzICAgIGM1OS4xOTItMzQuMTc1LDEwMS41MzUtODkuMzU1LDExOS4yMjUtMTU1LjM3N0M1MjAuODYyLDI1Ni4yMDcsNTExLjc4MSwxODcuMjQ5LDQ3Ny42MDYsMTI4LjA1NXogTTQ3Ny40MjksMzE1LjMzMyAgICBjLTE1Ljg0OCw1OS4xNDYtNTMuNzgsMTA4LjU4MS0xMDYuODEsMTM5LjE5N2MtNTMuMDI4LDMwLjYxNy0xMTQuODA2LDM4Ljc0OS0xNzMuOTUyLDIyLjkwMyAgICBjLTU5LjE0Ny0xNS44NDgtMTA4LjU4MS01My43OC0xMzkuMTk4LTEwNi44MWMtMzAuNjE2LTUzLjAyOC0zOC43NDktMTE0LjgwNy0yMi45LTE3My45NTQgICAgQzUwLjQxOCwxMzcuNTIzLDg4LjM1LDg4LjA5LDE0MS4zNzksNTcuNDcyYzM1LjMyNS0yMC4zOTUsNzQuNTI0LTMwLjgxMiwxMTQuMjQ5LTMwLjgxMmMxOS45MSwwLDM5Ljk1OSwyLjYxOCw1OS43MDIsNy45MDkgICAgYzU5LjE0NiwxNS44NDgsMTA4LjU4MSw1My43OCwxMzkuMTk3LDEwNi44MUM0ODUuMTQ0LDE5NC40MDgsNDkzLjI3OCwyNTYuMTg2LDQ3Ny40MjksMzE1LjMzM3oiIGZpbGw9IiNGRkZGRkYiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik0zNzguNzc4LDIzMS44NTJsLTE2NC41MjYtOTQuOTljLTguNzMxLTUuMDQxLTE5LjE1NS01LjAzOS0yNy44ODYtMC4wMDFjLTguNzMxLDUuMDQtMTMuOTQ0LDE0LjA2OS0xMy45NDQsMjQuMTV2MTg5Ljk4ICAgIGMwLDEwLjA4MSw1LjIxMiwxOS4xMDksMTMuOTQ0LDI0LjE1YzQuMzY1LDIuNTIxLDkuMTUyLDMuNzgsMTMuOTQxLDMuNzhjNC43OSwwLDkuNTc5LTEuMjYyLDEzLjk0NC0zLjc4MWwxNjQuNTI4LTk0Ljk4OSAgICBjOC43My01LjA0MiwxMy45NDEtMTQuMDcsMTMuOTQxLTI0LjE1MUMzOTIuNzIsMjQ1LjkyLDM4Ny41MDgsMjM2Ljg5MiwzNzguNzc4LDIzMS44NTJ6IE0zNjUuNDUyLDI1Ny4wNzRsLTE2NC41MjcsOTQuOTg5ICAgIGMtMC4yMDEsMC4xMTctMC42MiwwLjM1OC0xLjIzNiwwYy0wLjYxOC0wLjM1Ny0wLjYxOC0wLjgzOS0wLjYxOC0xLjA3MXYtMTg5Ljk4YzAtMC4yMzIsMC0wLjcxNCwwLjYxOC0xLjA3MSAgICBjMC4yNDItMC4xNCwwLjQ1My0wLjE4OCwwLjYzMy0wLjE4OGMwLjI4LDAsMC40ODIsMC4xMTcsMC42MDUsMC4xODhsMTY0LjUyNiw5NC45OWMwLjIwMSwwLjExNiwwLjYxOCwwLjM1NywwLjYxOCwxLjA3MSAgICBDMzY2LjA3MSwyNTYuNzE2LDM2NS42NTIsMjU2Ljk1OCwzNjUuNDUyLDI1Ny4wNzR6IiBmaWxsPSIjRkZGRkZGIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNDEzLjMwMywxMzQuNDRjLTMxLjY4OS00MC45MzgtNzkuMzI2LTY4LjQ0Mi0xMzAuNjk4LTc1LjQ2MWMtNy4yODMtMC45OTctMTQuMDA5LDQuMTA2LTE1LjAwNiwxMS4zOTkgICAgYy0wLjk5NSw3LjI5MSw0LjEwOCwxNC4wMDksMTEuMzk5LDE1LjAwNmM0NC41MTIsNi4wODEsODUuNzgzLDI5LjkwOSwxMTMuMjMyLDY1LjM2OWMyLjYyNiwzLjM5Miw2LjU2NSw1LjE2OCwxMC41NDYsNS4xNjggICAgYzIuODQ5LDAsNS43Mi0wLjkwOSw4LjE0Ni0yLjc4OUM0MTYuNzQxLDE0OC42MjgsNDE3LjgwNywxNDAuMjU5LDQxMy4zMDMsMTM0LjQ0eiIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />
-                        </a>
-                    </div>
-                    <div class="card-content">
-                        <p>Fuerza</p>
-                    </div>
-                </div>
-
                 <div class="col s12 m4">
                     <div class="card z-depth-5 hoverable">
                         <div class="card-image">
@@ -255,8 +322,7 @@
 
                             <a class=" btn-floating btn-large halfway-fab waves-effect waves-light blue-darken pulse"
                                 href="https://marcoc76.github.io/guacamole/newton.html">
-                                <img
-                                    src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjY0cHgiIGhlaWdodD0iNjRweCI+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTQ3Ny42MDYsMTI4LjA1NUM0NDMuNDMxLDY4Ljg2MywzODguMjUxLDI2LjUyLDMyMi4yMjksOC44M0MyNTYuMjA4LTguODYyLDE4Ny4yNSwwLjIxNywxMjguMDU1LDM0LjM5NCAgICBDNjguODYxLDY4LjU3LDI2LjUyLDEyMy43NSw4LjgzLDE4OS43NzJjLTE3LjY5LDY2LjAyMS04LjYxMSwxMzQuOTgxLDI1LjU2NCwxOTQuMTczICAgIEM2OC41NjgsNDQzLjEzNywxMjMuNzUsNDg1LjQ4LDE4OS43NzEsNTAzLjE3YzIyLjA0Niw1LjkwOCw0NC40MTcsOC44Myw2Ni42NDYsOC44M2M0NC4zMzksMCw4OC4xMDEtMTEuNjI5LDEyNy41MjktMzQuMzkzICAgIGM1OS4xOTItMzQuMTc1LDEwMS41MzUtODkuMzU1LDExOS4yMjUtMTU1LjM3N0M1MjAuODYyLDI1Ni4yMDcsNTExLjc4MSwxODcuMjQ5LDQ3Ny42MDYsMTI4LjA1NXogTTQ3Ny40MjksMzE1LjMzMyAgICBjLTE1Ljg0OCw1OS4xNDYtNTMuNzgsMTA4LjU4MS0xMDYuODEsMTM5LjE5N2MtNTMuMDI4LDMwLjYxNy0xMTQuODA2LDM4Ljc0OS0xNzMuOTUyLDIyLjkwMyAgICBjLTU5LjE0Ny0xNS44NDgtMTA4LjU4MS01My43OC0xMzkuMTk4LTEwNi44MWMtMzAuNjE2LTUzLjAyOC0zOC43NDktMTE0LjgwNy0yMi45LTE3My45NTQgICAgQzUwLjQxOCwxMzcuNTIzLDg4LjM1LDg4LjA5LDE0MS4zNzksNTcuNDcyYzM1LjMyNS0yMC4zOTUsNzQuNTI0LTMwLjgxMiwxMTQuMjQ5LTMwLjgxMmMxOS45MSwwLDM5Ljk1OSwyLjYxOCw1OS43MDIsNy45MDkgICAgYzU5LjE0NiwxNS44NDgsMTA4LjU4MSw1My43OCwxMzkuMTk3LDEwNi44MUM0ODUuMTQ0LDE5NC40MDgsNDkzLjI3OCwyNTYuMTg2LDQ3Ny40MjksMzE1LjMzM3oiIGZpbGw9IiNGRkZGRkYiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik0zNzguNzc4LDIzMS44NTJsLTE2NC41MjYtOTQuOTljLTguNzMxLTUuMDQxLTE5LjE1NS01LjAzOS0yNy44ODYtMC4wMDFjLTguNzMxLDUuMDQtMTMuOTQ0LDE0LjA2OS0xMy45NDQsMjQuMTV2MTg5Ljk4ICAgIGMwLDEwLjA4MSw1LjIxMiwxOS4xMDksMTMuOTQ0LDI0LjE1YzQuMzY1LDIuNTIxLDkuMTUyLDMuNzgsMTMuOTQxLDMuNzhjNC43OSwwLDkuNTc5LTEuMjYyLDEzLjk0NC0zLjc4MWwxNjQuNTI4LTk0Ljk4OSAgICBjOC43My01LjA0MiwxMy45NDEtMTQuMDcsMTMuOTQxLTI0LjE1MUMzOTIuNzIsMjQ1LjkyLDM4Ny41MDgsMjM2Ljg5MiwzNzguNzc4LDIzMS44NTJ6IE0zNjUuNDUyLDI1Ny4wNzRsLTE2NC41MjcsOTQuOTg5ICAgIGMtMC4yMDEsMC4xMTctMC42MiwwLjM1OC0xLjIzNiwwYy0wLjYxOC0wLjM1Ny0wLjYxOC0wLjgzOS0wLjYxOC0xLjA3MXYtMTg5Ljk4YzAtMC4yMzIsMC0wLjcxNCwwLjYxOC0xLjA3MSAgICBjMC4yNDItMC4xNCwwLjQ1My0wLjE4OCwwLjYzMy0wLjE4OGMwLjI4LDAsMC40ODIsMC4xMTcsMC42MDUsMC4xODhsMTY0LjUyNiw5NC45OWMwLjIwMSwwLjExNiwwLjYxOCwwLjM1NywwLjYxOCwxLjA3MSAgICBDMzY2LjA3MSwyNTYuNzE2LDM2NS42NTIsMjU2Ljk1OCwzNjUuNDUyLDI1Ny4wNzR6IiBmaWxsPSIjRkZGRkZGIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNDEzLjMwMywxMzQuNDRjLTMxLjY4OS00MC45MzgtNzkuMzI2LTY4LjQ0Mi0xMzAuNjk4LTc1LjQ2MWMtNy4yODMtMC45OTctMTQuMDA5LDQuMTA2LTE1LjAwNiwxMS4zOTkgICAgYy0wLjk5NSw3LjI5MSw0LjEwOCwxNC4wMDksMTEuMzk5LDE1LjAwNmM0NC41MTIsNi4wODEsODUuNzgzLDI5LjkwOSwxMTMuMjMyLDY1LjM2OWMyLjYyNiwzLjM5Miw2LjU2NSw1LjE2OCwxMC41NDYsNS4xNjggICAgYzIuODQ5LDAsNS43Mi0wLjkwOSw4LjE0Ni0yLjc4OUM0MTYuNzQxLDE0OC42MjgsNDE3LjgwNywxNDAuMjU5LDQxMy4zMDMsMTM0LjQ0eiIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />
+                                <img src="img/guacamole (2).png" />
                             </a>
                         </div>
                         <div class="card-content">
@@ -270,10 +336,9 @@
                         <div class="card-image">
                             <img src="img/equilibrio.jpg">
 
-                            <a class=" btn-floating btn-large halfway-fab waves-effect waves-light blue-darken pulse"
+                            <a class=" btn-floating btn-large halfway-fab waves-effect waves-light green darken-3 pulse"
                                 href="https://marcoc76.github.io/guacamole/estatica.html">
-                                <img
-                                    src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjY0cHgiIGhlaWdodD0iNjRweCI+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTQ3Ny42MDYsMTI4LjA1NUM0NDMuNDMxLDY4Ljg2MywzODguMjUxLDI2LjUyLDMyMi4yMjksOC44M0MyNTYuMjA4LTguODYyLDE4Ny4yNSwwLjIxNywxMjguMDU1LDM0LjM5NCAgICBDNjguODYxLDY4LjU3LDI2LjUyLDEyMy43NSw4LjgzLDE4OS43NzJjLTE3LjY5LDY2LjAyMS04LjYxMSwxMzQuOTgxLDI1LjU2NCwxOTQuMTczICAgIEM2OC41NjgsNDQzLjEzNywxMjMuNzUsNDg1LjQ4LDE4OS43NzEsNTAzLjE3YzIyLjA0Niw1LjkwOCw0NC40MTcsOC44Myw2Ni42NDYsOC44M2M0NC4zMzksMCw4OC4xMDEtMTEuNjI5LDEyNy41MjktMzQuMzkzICAgIGM1OS4xOTItMzQuMTc1LDEwMS41MzUtODkuMzU1LDExOS4yMjUtMTU1LjM3N0M1MjAuODYyLDI1Ni4yMDcsNTExLjc4MSwxODcuMjQ5LDQ3Ny42MDYsMTI4LjA1NXogTTQ3Ny40MjksMzE1LjMzMyAgICBjLTE1Ljg0OCw1OS4xNDYtNTMuNzgsMTA4LjU4MS0xMDYuODEsMTM5LjE5N2MtNTMuMDI4LDMwLjYxNy0xMTQuODA2LDM4Ljc0OS0xNzMuOTUyLDIyLjkwMyAgICBjLTU5LjE0Ny0xNS44NDgtMTA4LjU4MS01My43OC0xMzkuMTk4LTEwNi44MWMtMzAuNjE2LTUzLjAyOC0zOC43NDktMTE0LjgwNy0yMi45LTE3My45NTQgICAgQzUwLjQxOCwxMzcuNTIzLDg4LjM1LDg4LjA5LDE0MS4zNzksNTcuNDcyYzM1LjMyNS0yMC4zOTUsNzQuNTI0LTMwLjgxMiwxMTQuMjQ5LTMwLjgxMmMxOS45MSwwLDM5Ljk1OSwyLjYxOCw1OS43MDIsNy45MDkgICAgYzU5LjE0NiwxNS44NDgsMTA4LjU4MSw1My43OCwxMzkuMTk3LDEwNi44MUM0ODUuMTQ0LDE5NC40MDgsNDkzLjI3OCwyNTYuMTg2LDQ3Ny40MjksMzE1LjMzM3oiIGZpbGw9IiNGRkZGRkYiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik0zNzguNzc4LDIzMS44NTJsLTE2NC41MjYtOTQuOTljLTguNzMxLTUuMDQxLTE5LjE1NS01LjAzOS0yNy44ODYtMC4wMDFjLTguNzMxLDUuMDQtMTMuOTQ0LDE0LjA2OS0xMy45NDQsMjQuMTV2MTg5Ljk4ICAgIGMwLDEwLjA4MSw1LjIxMiwxOS4xMDksMTMuOTQ0LDI0LjE1YzQuMzY1LDIuNTIxLDkuMTUyLDMuNzgsMTMuOTQxLDMuNzhjNC43OSwwLDkuNTc5LTEuMjYyLDEzLjk0NC0zLjc4MWwxNjQuNTI4LTk0Ljk4OSAgICBjOC43My01LjA0MiwxMy45NDEtMTQuMDcsMTMuOTQxLTI0LjE1MUMzOTIuNzIsMjQ1LjkyLDM4Ny41MDgsMjM2Ljg5MiwzNzguNzc4LDIzMS44NTJ6IE0zNjUuNDUyLDI1Ny4wNzRsLTE2NC41MjcsOTQuOTg5ICAgIGMtMC4yMDEsMC4xMTctMC42MiwwLjM1OC0xLjIzNiwwYy0wLjYxOC0wLjM1Ny0wLjYxOC0wLjgzOS0wLjYxOC0xLjA3MXYtMTg5Ljk4YzAtMC4yMzIsMC0wLjcxNCwwLjYxOC0xLjA3MSAgICBjMC4yNDItMC4xNCwwLjQ1My0wLjE4OCwwLjYzMy0wLjE4OGMwLjI4LDAsMC40ODIsMC4xMTcsMC42MDUsMC4xODhsMTY0LjUyNiw5NC45OWMwLjIwMSwwLjExNiwwLjYxOCwwLjM1NywwLjYxOCwxLjA3MSAgICBDMzY2LjA3MSwyNTYuNzE2LDM2NS42NTIsMjU2Ljk1OCwzNjUuNDUyLDI1Ny4wNzR6IiBmaWxsPSIjRkZGRkZGIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNDEzLjMwMywxMzQuNDRjLTMxLjY4OS00MC45MzgtNzkuMzI2LTY4LjQ0Mi0xMzAuNjk4LTc1LjQ2MWMtNy4yODMtMC45OTctMTQuMDA5LDQuMTA2LTE1LjAwNiwxMS4zOTkgICAgYy0wLjk5NSw3LjI5MSw0LjEwOCwxNC4wMDksMTEuMzk5LDE1LjAwNmM0NC41MTIsNi4wODEsODUuNzgzLDI5LjkwOSwxMTMuMjMyLDY1LjM2OWMyLjYyNiwzLjM5Miw2LjU2NSw1LjE2OCwxMC41NDYsNS4xNjggICAgYzIuODQ5LDAsNS43Mi0wLjkwOSw4LjE0Ni0yLjc4OUM0MTYuNzQxLDE0OC42MjgsNDE3LjgwNywxNDAuMjU5LDQxMy4zMDMsMTM0LjQ0eiIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />
+                                <img src="img/guacamole (2).png" />
                             </a>
                         </div>
                         <div class="card-content">
@@ -283,32 +348,33 @@
                 </div>
 
             </div>
-
             <div class="row">
-                    <div class="col s12 m4">
-                            <div class="card z-depth-5 hoverable">
-                                <div class="card-image">
-                                    <img src="img/trabajo1.jpg">
-        
-                                    <a class=" btn-floating btn-large halfway-fab waves-effect waves-light blue-darken pulse"
-                                        href="https://marcoc76.github.io/guacamole/pte.html">
-                                        <img
-                                            src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjY0cHgiIGhlaWdodD0iNjRweCI+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTQ3Ny42MDYsMTI4LjA1NUM0NDMuNDMxLDY4Ljg2MywzODguMjUxLDI2LjUyLDMyMi4yMjksOC44M0MyNTYuMjA4LTguODYyLDE4Ny4yNSwwLjIxNywxMjguMDU1LDM0LjM5NCAgICBDNjguODYxLDY4LjU3LDI2LjUyLDEyMy43NSw4LjgzLDE4OS43NzJjLTE3LjY5LDY2LjAyMS04LjYxMSwxMzQuOTgxLDI1LjU2NCwxOTQuMTczICAgIEM2OC41NjgsNDQzLjEzNywxMjMuNzUsNDg1LjQ4LDE4OS43NzEsNTAzLjE3YzIyLjA0Niw1LjkwOCw0NC40MTcsOC44Myw2Ni42NDYsOC44M2M0NC4zMzksMCw4OC4xMDEtMTEuNjI5LDEyNy41MjktMzQuMzkzICAgIGM1OS4xOTItMzQuMTc1LDEwMS41MzUtODkuMzU1LDExOS4yMjUtMTU1LjM3N0M1MjAuODYyLDI1Ni4yMDcsNTExLjc4MSwxODcuMjQ5LDQ3Ny42MDYsMTI4LjA1NXogTTQ3Ny40MjksMzE1LjMzMyAgICBjLTE1Ljg0OCw1OS4xNDYtNTMuNzgsMTA4LjU4MS0xMDYuODEsMTM5LjE5N2MtNTMuMDI4LDMwLjYxNy0xMTQuODA2LDM4Ljc0OS0xNzMuOTUyLDIyLjkwMyAgICBjLTU5LjE0Ny0xNS44NDgtMTA4LjU4MS01My43OC0xMzkuMTk4LTEwNi44MWMtMzAuNjE2LTUzLjAyOC0zOC43NDktMTE0LjgwNy0yMi45LTE3My45NTQgICAgQzUwLjQxOCwxMzcuNTIzLDg4LjM1LDg4LjA5LDE0MS4zNzksNTcuNDcyYzM1LjMyNS0yMC4zOTUsNzQuNTI0LTMwLjgxMiwxMTQuMjQ5LTMwLjgxMmMxOS45MSwwLDM5Ljk1OSwyLjYxOCw1OS43MDIsNy45MDkgICAgYzU5LjE0NiwxNS44NDgsMTA4LjU4MSw1My43OCwxMzkuMTk3LDEwNi44MUM0ODUuMTQ0LDE5NC40MDgsNDkzLjI3OCwyNTYuMTg2LDQ3Ny40MjksMzE1LjMzM3oiIGZpbGw9IiNGRkZGRkYiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik0zNzguNzc4LDIzMS44NTJsLTE2NC41MjYtOTQuOTljLTguNzMxLTUuMDQxLTE5LjE1NS01LjAzOS0yNy44ODYtMC4wMDFjLTguNzMxLDUuMDQtMTMuOTQ0LDE0LjA2OS0xMy45NDQsMjQuMTV2MTg5Ljk4ICAgIGMwLDEwLjA4MSw1LjIxMiwxOS4xMDksMTMuOTQ0LDI0LjE1YzQuMzY1LDIuNTIxLDkuMTUyLDMuNzgsMTMuOTQxLDMuNzhjNC43OSwwLDkuNTc5LTEuMjYyLDEzLjk0NC0zLjc4MWwxNjQuNTI4LTk0Ljk4OSAgICBjOC43My01LjA0MiwxMy45NDEtMTQuMDcsMTMuOTQxLTI0LjE1MUMzOTIuNzIsMjQ1LjkyLDM4Ny41MDgsMjM2Ljg5MiwzNzguNzc4LDIzMS44NTJ6IE0zNjUuNDUyLDI1Ny4wNzRsLTE2NC41MjcsOTQuOTg5ICAgIGMtMC4yMDEsMC4xMTctMC42MiwwLjM1OC0xLjIzNiwwYy0wLjYxOC0wLjM1Ny0wLjYxOC0wLjgzOS0wLjYxOC0xLjA3MXYtMTg5Ljk4YzAtMC4yMzIsMC0wLjcxNCwwLjYxOC0xLjA3MSAgICBjMC4yNDItMC4xNCwwLjQ1My0wLjE4OCwwLjYzMy0wLjE4OGMwLjI4LDAsMC40ODIsMC4xMTcsMC42MDUsMC4xODhsMTY0LjUyNiw5NC45OWMwLjIwMSwwLjExNiwwLjYxOCwwLjM1NywwLjYxOCwxLjA3MSAgICBDMzY2LjA3MSwyNTYuNzE2LDM2NS42NTIsMjU2Ljk1OCwzNjUuNDUyLDI1Ny4wNzR6IiBmaWxsPSIjRkZGRkZGIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNDEzLjMwMywxMzQuNDRjLTMxLjY4OS00MC45MzgtNzkuMzI2LTY4LjQ0Mi0xMzAuNjk4LTc1LjQ2MWMtNy4yODMtMC45OTctMTQuMDA5LDQuMTA2LTE1LjAwNiwxMS4zOTkgICAgYy0wLjk5NSw3LjI5MSw0LjEwOCwxNC4wMDksMTEuMzk5LDE1LjAwNmM0NC41MTIsNi4wODEsODUuNzgzLDI5LjkwOSwxMTMuMjMyLDY1LjM2OWMyLjYyNiwzLjM5Miw2LjU2NSw1LjE2OCwxMC41NDYsNS4xNjggICAgYzIuODQ5LDAsNS43Mi0wLjkwOSw4LjE0Ni0yLjc4OUM0MTYuNzQxLDE0OC42MjgsNDE3LjgwNywxNDAuMjU5LDQxMy4zMDMsMTM0LjQ0eiIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />
-                                    </a>
-                                </div>
-                                <div class="card-content">
-                                    <p>Trabajo y energía</p>
-                                </div>
-                            </div>
-                        </div>
-            </div>
-        </div>
+                <div class="col s12 m4">
+                    <div class="card z-depth-5 hoverable">
+                        <div class="card-image">
+                            <img src="img/trabajo1.jpg">
 
+                            <a class=" btn-floating btn-large halfway-fab waves-effect waves-light blue-darken pulse"
+                                href="https://marcoc76.github.io/guacamole/pte.html">
+                                <img src="img/guacamole (2).png" />
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <p>Trabajo y energía</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="fixed-action-btn">
+            <img data-target="slide-out" class="sidenav-trigger btn-floating btn-large black"
+                src="img/guacamole (2).png" alt="" srcset="">
+        </div>
         <script src="materialize.min.js"></script>
         <script>
             document.addEventListener('DOMContentLoaded', function () {
-                var elems = document.querySelectorAll('.tooltipped');
-                var instances = M.Tooltip.init(elems, options);
+                M.AutoInit();
+
             });
         </script>
 </body>
